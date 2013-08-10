@@ -70,6 +70,7 @@ img.avatar{height: 1em;}
 .featuredProjects h3, .featuredGoals h3{
 	line-height: 1.5em;
 	min-height: 3em;
+	text-align: center;
 }
 
 .goal .stats li{
