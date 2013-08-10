@@ -1,6 +1,6 @@
 <div class='span8 offset2'>
 
-<div style='text-align:center'><img src='http://assets.openfi.re/images/collateral/change1.jpg' style='width: 100%'></div>
+<div style='text-align:center'><img src='http://assets.beabandaid.co/images/collateral/change1.jpg' style='width: 100%'></div>
 	<h1>Some ideas aren't about the bottom line.</h1><br>
 
 <div class='lead'><p>Some ideas are about making the world a better place, about providing people with the tools and services they need to empower themselves, to improve their lives. These are the ideas that truly change the world.</p>

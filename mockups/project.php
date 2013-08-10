@@ -68,7 +68,7 @@
 			    	</li>
 <? else: ?>
 			    	<li class='dropdown' style='margin-left: 2em'>
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src='http://assets.openfi.re/images/avatars/openfire_default_avatar.png' class='avatar'> jzellis <b class="caret"></b></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src='http://assets.beabandaid.co/images/avatars/openfire_default_avatar.png' class='avatar'> jzellis <b class="caret"></b></a>
 			    		<ul class='dropdown-menu'>
 			    			<li><a href='/notifications'>Notifications <b>(1)</b></a></li>
 			    			<li><a href='/profile'>My Profile</a></li>

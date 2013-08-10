@@ -73,7 +73,6 @@ $(function() {
             <? if(!empty($this->project->mediaEmbed)){ 
                         if(empty($this->mediaWidth)) 
                                 $this->mediaWidth = 320; 
-                        var_dump($this->project->mediaEmbed);
                         $objs = $embedly->oembed(array('url' => $this->project->mediaEmbed, 'maxwidth' => '640')); 
                         if(!empty($objs[0]->html)) 
                                 echo $objs[0]->html; 

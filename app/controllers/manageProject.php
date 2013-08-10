@@ -88,7 +88,7 @@ $project->update($params);
 
 if(!empty($_FILES['icon']['name'])){
 
-$destFile = $_SERVER['DOCUMENT_ROOT'] . "/../assets.openfi.re/images/projects/".$project->uuid.".png";
+$destFile = $_SERVER['DOCUMENT_ROOT'] . "/../assets.beabandaid.co/images/projects/".$project->uuid.".png";
 
 $newavatar = imageToPNG($_FILES['icon']['tmp_name'],$destFile, 256);
 

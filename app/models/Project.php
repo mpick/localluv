@@ -19,10 +19,10 @@
 
         $this->creator = new User($this->creatorID);
 
-       if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/../assets.openfi.re/images/projects/" . $this->uuid . ".png")){
-        	$this->icon = "http://assets.openfi.re/images/projects/" . $this->uuid . ".png";
+       if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/../assets.beabandaid.co/images/projects/" . $this->uuid . ".png")){
+        	$this->icon = "http://assets.beabandaid.co/images/projects/" . $this->uuid . ".png";
         }else{
-        	$this->icon = "http://assets.openfi.re/images/projects/openfire_default_project.png";
+        	$this->icon = "http://assets.beabandaid.co/images/projects/openfire_default_project.png";
         }
 
  global $dbh;
