@@ -57,14 +57,6 @@ if (strstr($server, 'dev')) {
 		$dbuser = "root";
 		$dbpass = "Welcome-09";
 
-
-
-
-
-
-
-
-
 		define("EMBEDLYKEY", "92dd1679846943baa1f1a2c9611d36e0");
 		define("FILEPICKER_KEY", "APmnFWcYWT5G1Zv4GImDoz");
 
@@ -74,9 +66,9 @@ if (strstr($server, 'dev')) {
 		define('TWITTER_ACCESS_TOKEN', '565925798-BW7LiCCnT0AptesEQf18uRT6bPWx4l4anRWSQDyX');
 		define('TWITTER_ACCESS_TOKEN_SECRET', 'wBvpKkTMJdNoEtJtsJXUHJFCwuiJxQnqDWdJuTwOMR4');
 
-		define('FACEBOOK_APP_ID','132286753608939');
+		define('FACEBOOK_APP_ID','557418470960477');
 		define('FACEBOOK_KEY', '468309289847671');
-		define('FACEBOOK_SECRET','11d605495d3f28a20fc776eb42afac6a');
+		define('FACEBOOK_SECRET','b7322ab04431676963091084c15735d6');
 
 		// This is for dev, switch to other for prod, will handle with server check
 
