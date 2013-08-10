@@ -12,7 +12,7 @@
               <strong>
                 BandAid
               </strong>
-              is a crowdfunding platform for long-term, socially valuable projects.
+              keeping fans connected to bands they love.
             </h1>
           </div>
         </div>
