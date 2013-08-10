@@ -58,8 +58,12 @@ if(empty($check)){
 
 			case($user->active == 1 && $user->deleted == 0):
 				
+				/*
 				setcookie("user[username]", $user->username, time()+60*60*24*30, "/","openfi.re");
 				setcookie("user[key]", $user->uuid, time()+60*60*24*30, "/","openfi.re");
+				*/
+				setcookie("user[username]", $user->username, time()+60*60*24*30, "/",HOSTNAME);
+				setcookie("user[key]", $user->uuid, time()+60*60*24*30, "/",HOSTNAME);
 
 				$params = array("lastLogin" => time());
 				$user->update($params);
@@ -75,10 +79,10 @@ if(!empty($_COOKIE['user']['lastPage'])){
 	$return = $_COOKIE['user']['lastPage'];
 }
 else{
-	$return = 				header("Location: " . $_SERVER['HTTP_REFERER']);
+	//$return = 				header("Location: " . $_SERVER['HTTP_REFERER']);
+	$return = $_SERVER['HTTP_REFERER'];
 ;
 }
-
 			header("Location: " . $return);
 
 			break;
