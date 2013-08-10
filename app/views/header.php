@@ -13,7 +13,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
 <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-43081497-1', 'beabandaid.co');
+  ga('send', 'pageview');
+
+</script>
 <script src='/app/libraries/min/b=js&f=bootstrap.min.js,holder.js,jquery.form.js,parsley.js,jquery.cookie.js'></script>
 <? if(!empty($this->scripts)): foreach($this->scripts as $url): ?>
 <script src='<?= $url ?>'></script>
@@ -36,7 +45,7 @@ ini_set('display_errors', '1');
             <a href="/projects">Explore Tours</a>
           </li>
           <li class="divider-vertical"></li>
-          <li><a href="/create">Create</a></li>
+          <li><a href="/create">Create Tour</a></li>
           <li class="divider-vertical"></li>
           <li><a href="/about">About Us</a></li>
           </ul>

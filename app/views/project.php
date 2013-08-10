@@ -62,7 +62,7 @@ $(function() {
 
     <li class='active'><a href='#about' data-toggle='tab'>Details</a></li>
     <li><a href='#updates' data-toggle='tab'>Updates <span class='badge'><?= count($this->project->updates) ?></span></a></li>
-    <li><a href='#team' data-toggle='tab'>Team <span class='badge'><?= count($this->project->team) ?></span></a></li>
+    <li><a href='#team' data-toggle='tab'>Band <span class='badge'><?= count($this->project->team) ?></span></a></li>
 </ul>
 
 <div class="tab-content">
@@ -80,7 +80,7 @@ $(function() {
                } 
             ?>    
         </div>
-                            <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Help Fund The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?= $currentGoal->suggestedAmount ?> Minimum Pledge</small></a></div>
+                            <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Support The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?= $currentGoal->suggestedAmount ?> Minimum Pledge</small></a></div>
         <div class='share well well-small'>
 <a class='btn btn-info' href="https://twitter.com/share?url=<?= urlencode('http://' . $_SERVER['SERVER_NAME'] .  '/projects/' . $this->project->slug) ?>
 &text=<?= urlencode($this->project->title . " (via @joinopenfire)") ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> <a class='btn btn-info' style='background: #596F90' href='https://www.facebook.com/dialog/feed?app_id=<?= FACEBOOK_APP_ID ?>&
@@ -103,7 +103,7 @@ $(function() {
 
 
             <ul class='stats unstyled'>
-            <li>Creator: <b><a href='#'><?= $this->project->creator->username ?></a></b></li>
+            <!--<li>Creator: <b><a href='#'><?= $this->project->creator->username ?></a></b></li>-->
             <li>Launched: <b><?= date("F jS, Y", $this->project->dateAdded) ?></b></li>
             <li>Total Funds Raised: <b>$<?= $currentGoal->currentAmount ?></b> from <b><?= count($currentGoal->backers) ?></b> backers</li>
         </ul>
@@ -174,8 +174,8 @@ $(function() {
 </div>
     </div>
 <div class='span4 goal sidebar'>
- <h3>Fund The Band's Current Tour</h3>
-<p style='text-align:center'><small><a href="#faq_goal" role="button" data-toggle="modal"><i class='icon-question-sign help-icon'></i> What's the difference between a project and a goal?</a></small></p>
+ <h3>Support The Band's Current Tour</h3>
+<!--<p style='text-align:center'><small><a href="#faq_goal" role="button" data-toggle="modal"><i class='icon-question-sign help-icon'></i> What's the difference between a project and a goal?</a></small></p>-->
     <div class='well well-small'>
         <h3><a href='/goals/<?= $currentGoal->uuid ?>'><?= $currentGoal->name ?></a></h3>
         <div class='summary'><?= nl2br($currentGoal->summary) ?></div>
@@ -189,7 +189,7 @@ $(function() {
 
                             <li><b>$<?= $this->currentGoal->currentAmount ?></b><br> raised</li>
                                                 <li class="divider-vertical"></li>
-                            <li><b><?= count($this->currentGoal->backers) ?></b><br> backers</li>
+                            <li><b><?= count($this->currentGoal->backers) ?></b><br> supporters</li>
                                                 <li class="divider-vertical"></li>
                             <li><b><?= $this->currentGoal->daysUntilTarget ?></b><br> days left</li>
                         </ul>
@@ -197,7 +197,7 @@ $(function() {
 <form action='/fundingRedirect' method='post'>
     <input type='hidden' name='goalUUID' value='<?= $this->currentGoal->uuid ?>'>
 <fieldset>
-    <label for='amount'><b>Funding Amount</b></label>
+    <label for='amount'><b>Support Amount</b></label>
     <div class="input-prepend">
   <span class="add-on">$</span>
   <input class="input-xlarge" type="text" id='amount' name='amount' placeholder="$5 Minimum Pledge" value='<?= $this->currentGoal->suggestedAmount ?>'>
@@ -205,7 +205,7 @@ $(function() {
 <br>
 </fieldset>
 <fieldset>
-<h3>Rewards</h3>
+<h3>Tour Perks</h3>
 <fieldset>
     <label class='radio reward'><input type='radio' name='rewardUUID' value='0' checked='checked'> <h4><b>No Reward</b></h4></label>
     <hr>
@@ -223,7 +223,7 @@ $(function() {
 
 </div>
 <div>
-<p><small>Openfire's payments are processed by <a href='http://www.wepay.com'>WePay</a>, and we never see or retain your credit card information. Your card will be immediately charged upon submission of payment.</small></p>
+<p><small>BandAid’s payments are processed by <a href='http://www.wepay.com'>WePay</a>, and we never see or retain your credit card information. Your card will be immediately charged upon submission of payment.</small></p>
 </div>
 </div>
 <div id="faq_goal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
