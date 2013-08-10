@@ -39,7 +39,7 @@ ini_set('display_errors', '1');
   <div class='row-fluid'>
     <div class='navbar navbar-static-top'>
       <div class='navbar-inner'>
-        <a class='brand' href='/'>BandAid</a>
+        <a class='brand' href='/'><img src="/images/bandaid_logo.png" style="height:30px" /></a>
         <ul class="nav">
           <li class='dropdown'>
             <a href="/projects">Explore Tours</a>

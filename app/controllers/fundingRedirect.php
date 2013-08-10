@@ -1,4 +1,4 @@
-<? class fundingRedirect{
+<?php class fundingRedirect{
 
 
 function post(){

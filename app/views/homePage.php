@@ -5,7 +5,7 @@
           <div class="span10 splash offset1">
            <div class='row-fluid'>
             <div class='span2'>
-            <img width="200" src="img/logo.png">
+            <img width="200" src="img/bandaid_logo.png">
           </div>
           <div class='span10'>
             <h1>
