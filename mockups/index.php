@@ -86,7 +86,7 @@
 		<!-- Splash -->
 		<div class='hero-unit splash'>
 			<div class='span1'><img src='/img/logo.png' class='span12'></div>
-			<div class='span11'><h2 style='line-height: 1em; margin-top: 0; padding-top:0'><b>openfire</b> is a crowdfunding platform for long-term, socially valuable projects. <a href='/about'>Learn more about us.</a></h2></div>
+			<div class='span11'><h2 style='line-height: 1em; margin-top: 0; padding-top:0'><b>[our name]</b> is a crowdfunding platform for long-term, socially valuable projects. <a href='/about'>Learn more about us.</a></h2></div>
 			<div class='clearfix'></div>
 		</div>
 		<!-- /splash -->

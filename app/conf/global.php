@@ -54,8 +54,8 @@ $server = (isset($_SERVER['SERVER_NAME'])) ? $_SERVER['SERVER_NAME'] : 'www.open
 if (strstr($server, 'dev')) {
 
 		$dsn = "mysql:dbname=development;host=localhost";
-		$dbuser = "development";
-		$dbpass = "californiaGold";
+		$dbuser = "root";
+		$dbpass = "Welcome-09";
 
 
 
@@ -99,8 +99,8 @@ define('WEPAYAPIURL', 'https://stage.wepay.com/v2/oauth2/authorize?client_id=' .
 }else{
 
 		$dsn = "mysql:dbname=production;host=localhost";
-		$dbuser = "production";
-		$dbpass = "californiaGold";
+		$dbuser = "root";
+		$dbpass = "Welcome-09";
 
 
 
