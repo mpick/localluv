@@ -75,9 +75,9 @@ if (strstr($server, 'dev')) {
 		// This is for dev, switch to other for prod, will handle with server check
 
 
-		define('WEPAY_CLIENT_ID','70362');
-		define('WEPAY_CLIENT_SECRET', 'c0cdb5865d');
-		define('WEPAY_ACCESS_TOKEN', 'STAGE_9672fc394c1470b2d9dce2340122f32177b5eb03a9e9de990626273cc0f80b76');
+		define('WEPAY_CLIENT_ID','114857');
+		define('WEPAY_CLIENT_SECRET', '68b0c3f879');
+		define('WEPAY_ACCESS_TOKEN', 'STAGE_2dec79a8bb0c8ddf2ccc78d51ceb689221640a30a687b13beff695d7dbc50c9a');
 		define('WEPAY_ACCOUNT_ID', '155429649');
 		WePay::useStaging(WEPAY_CLIENT_ID, WEPAY_CLIENT_SECRET);
 
