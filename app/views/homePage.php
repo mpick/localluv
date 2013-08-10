@@ -10,7 +10,7 @@
           <div class='span10'>
             <h1>
               <strong>
-                [ournamehere]
+                BandAid
               </strong>
               is a crowdfunding platform for long-term, socially valuable projects.
             </h1>

@@ -2,7 +2,7 @@
 
 function get($uuid){
 
-	    setcookie("user[lastPage]", $_SERVER['REQUEST_URI'], time()+60*60*24*30, "/","openfi.re");
+	    setcookie("user[lastPage]", $_SERVER['REQUEST_URI'], time()+60*60*24*30, "/",HOSTNAME);
 
 
 global $dbh;

@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="google-site-verification" content="Q75qkjWivhgKNp5SAVjcNhklBZhU8burcU_juYZQEhU" />
 <title>Openfire<? if(!empty($this->title)) echo " | " . $this->title ?></title>
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/elusive-webfont.css" rel="stylesheet" media="screen">
@@ -38,11 +39,15 @@ s.parentNode.insertBefore(ga, s);
 
 </script>
 <div class='container-fluid'>
+  <?php 
+  error_reporting(E_ALL);
+ini_set('display_errors', '1');
+  ?>
   <!-- Header -->
   <div class='row-fluid'>
     <div class='navbar navbar-static-top'>
       <div class='navbar-inner'>
-        <a class='brand' href='/'><img src='/img/logo_textual.png' class='logo'></a>
+        <a class='brand' href='/'>BandAid</a>
         <ul class="nav">
           <li class='dropdown'>
             <a href="/projects">Explore</a>

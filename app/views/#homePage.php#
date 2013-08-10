@@ -34,7 +34,7 @@
              <div class="media" style='text-align:center'>
                     <a title="<?= $project->title ?>" href="/projects/<?= $project->slug ?>"><img src='<?= $project->icon ?>' style='width: 50%;'></a>
             </div>
-          <h3>p
+          <h3>
             <a title="<?= $project->title ?>" href="/projects/<?= $project->slug ?>">
               <?= $project->title ?>
             </a>

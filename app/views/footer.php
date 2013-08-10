@@ -12,7 +12,7 @@
       <div class='navbar-text clearfix span12' style='font-size:0.8em; text-align:center'>
                 <p>We respect your right to privacy. We will not give your name or personal information to third parties. No one will ever see your credit card information besides our payment processor, not even us.</p>
               </div>
-      <div class='navbar-text pull-right'>All content &copy; 2013 openfire.</div>
+      <div class='navbar-text pull-right'>All content &copy; 2013 BandAid.</div>
     </div>
   </footer>
   </div>
@@ -30,7 +30,7 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
       e.preventDefault();
       var link = $(this).attr('href');
       console.log($.cookie('user[lastPage]'));
-      $.cookie('user[lastPage]', link,{ path: '/', domain:'openfi.re' });
+      $.cookie('user[lastPage]', link,{ path: '/', domain:'beabandaid.co' });
 
       $('#loginModal').modal('show');
 }
@@ -47,7 +47,7 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
           <a class='btn btn-info' href='/auth/facebook' style='background: #596F90; margin-top: 0.5em; margin-bottom: 0.5em'><i class='icon-facebook'></i> Log In With Facebook</a> <a class='btn btn-info' href='/auth/twitter'><i class='icon-twitter'></i> Log In With Twitter</a>
           <hr>
   <form action='/login' method='post'>
-    <p>If you already have an openfire account, login below.</p>
+    <p>If you already have an BandAid account, login below.</p>
       <input type='text' class='input-xlarge' name='login' placeholder='Login'><br>
       <input type='password' class='input-xlarge' name='password' placeholder='Password'><br>
       <button class='btn' type='submit'>Login</button> or <a href='/signup' class='btn btn-info'>Signup</a><br>

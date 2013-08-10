@@ -70,7 +70,16 @@ $(function() {
     <div id='about' class='about tab-pane active fade in'>
 
         <div class='media'>
-            <? if(!empty($this->project->mediaEmbed)){ if(empty($this->mediaWidth)) $this->mediaWidth = 320; $objs = $embedly->oembed(array('url' => $this->project->mediaEmbed, 'maxwidth' => '640')); if(!empty($objs[0]->html)) echo $objs[0]->html; } ?>    
+            <? if(!empty($this->project->mediaEmbed)){ 
+                        if(empty($this->mediaWidth)) 
+                                $this->mediaWidth = 320; 
+                        var_dump($this->project->mediaEmbed);
+                        $objs = $embedly->oembed(array('url' => $this->project->mediaEmbed, 'maxwidth' => '640')); 
+                        if(!empty($objs[0]->html)) 
+                                echo $objs[0]->html; 
+                        
+               } 
+            ?>    
         </div>
                             <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Fund This Project's Current Goal<br><span style='font-size: 0.75em; font-weight: 300'>$<?= $currentGoal->suggestedAmount ?> Minimum Pledge</small></a></div>
         <div class='share well well-small'>

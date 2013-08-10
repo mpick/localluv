@@ -50,7 +50,7 @@ include_once($_SERVER['DOCUMENT_ROOT'] . '/app/functions/checkCSRF.php');
 		define("OUTGOINGEMAILNAME","Openfire");
 
 //$server = (isset($_SERVER['SERVER_NAME'])) ? $_SERVER['SERVER_NAME'] : 'www.openfi.re';
-$server = (isset($_SERVER['SERVER_NAME'])) ? $_SERVER['SERVER_NAME'] : 'bandaid.at';
+$server = (isset($_SERVER['SERVER_NAME'])) ? $_SERVER['SERVER_NAME'] : 'beabandaid.co';
 define ('HOSTNAME', $server);
 
 if (strstr($server, 'dev')) {
