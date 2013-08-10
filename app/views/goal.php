@@ -24,7 +24,7 @@
     <span itemprop="name"><?= $this->goal->name ?></span>
 <span itemprop="description"><?= $this->goal->summary ?></span>
 <img itemprop="image" src="<?= $project->icon ?>">
-<meta property="og:title" content="openfire: <?= $this->goal->name ?>" />
+<meta property="og:title" content="bandaid: <?= $this->goal->name ?>" />
 <meta property="og:image" content="<?= $project->icon ?>" />
 <meta property="og:description" content="<?= $this->goal->summary ?>" />
 </div>
@@ -103,7 +103,7 @@
 
 </div>
 <div>
-<p><small>Openfire's payments are processed by <a href='http://www.wepay.com'>WePay</a>, and we never see or retain your credit card information. Your card will be immediately charged upon submission of payment.</small></p>
+<p><small>BandAid's payments are processed by <a href='http://www.wepay.com'>WePay</a>, and we never see or retain your credit card information. Your card will be immediately charged upon submission of payment.</small></p>
 </div>
 </div>
 <div id="faq_goal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

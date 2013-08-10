@@ -39,7 +39,6 @@ $template->publish();
 $template->load('footer');
 $template->publish();
 
-var_dump ($template);
 
 
 }
