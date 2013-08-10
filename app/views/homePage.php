@@ -10,9 +10,10 @@
           <div class='span10'>
             <h1>
               <strong>
-                BandAid
+                Support the tour. Join the journey.
               </strong>
-              keeping fans connected to bands they love.
+              <br />
+              
             </h1>
           </div>
         </div>

@@ -33,7 +33,7 @@ ini_set('display_errors', '1');
         <a class='brand' href='/'>BandAid</a>
         <ul class="nav">
           <li class='dropdown'>
-            <a href="/projects">Explore</a>
+            <a href="/projects">Explore Tours</a>
           </li>
           <li class="divider-vertical"></li>
           <li><a href="/create">Create</a></li>

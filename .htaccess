@@ -9,3 +9,8 @@ RewriteCond $1 !^(index\.php)
 RewriteRule ^(.*)$ /index.php/$1 [L]
 
 RedirectMatch 301 /img/(.*) /images/$1
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(.*)\.beabandaid\.co
+RewriteRule ^(.*)$ http://beabandaid.co/%1/$1 [L,NC,QSA]
+

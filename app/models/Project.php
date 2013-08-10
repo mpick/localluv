@@ -18,9 +18,13 @@
         parent::__construct($id);
 
         $this->creator = new User($this->creatorID);
-
-       if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/../assets.beabandaid.co/images/projects/" . $this->uuid . ".png")){
-        	$this->icon = "http://assets.beabandaid.co/images/projects/" . $this->uuid . ".png";
+var_dump($this->uuid);
+var_dump( glob($_SERVER['DOCUMENT_ROOT'] . "/images/projects/" . $this->uuid . ".*"));
+       $imgFile = glob($_SERVER['DOCUMENT_ROOT'] . "/images/projects/" . $this->uuid . ".*");
+       
+       //if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/../images/projects/" . $this->uuid . ".png")){
+        if ( $imgFile[0] != '' ) {
+        	$this->icon = "http://assets.beabandaid.co/images/projects/" . str_replace($_SERVER['DOCUMENT_ROOT']."/images/projects/", '', $imgFile[0]);
         }else{
         	$this->icon = "http://assets.beabandaid.co/images/projects/openfire_default_project.png";
         }

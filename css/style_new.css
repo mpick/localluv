@@ -122,6 +122,7 @@ body.project .media{
 body.project .summary, body.project .description{
 	font-weight: 300;
 	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 body.project .project .summary, body.goal .summary{
