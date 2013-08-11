@@ -47,7 +47,7 @@ ini_set('display_errors', '1');
             <a href="/projects">Explore Tours</a>
           </li>
           <li class="divider-vertical"></li>
-          <li><a href="/create">Create Tour</a></li>
+          <li><a href="/create">Register Band</a></li>
           <li class="divider-vertical"></li>
           <li><a href="/about">About Us</a></li>
           </ul>

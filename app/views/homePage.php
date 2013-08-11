@@ -90,7 +90,7 @@ ini_set('display_errors', '1');
                 <div class="gprogress" style="width:<?= $goal->percentComplete ?>%"></div>
             </div>
             <h3>
-                <a title="<?= $goal->name ?>" href="/goals/<?= $goal->uuid ?>"><?= $goal->name ?></a>
+                <a title="<?= $goal->name ?>" href="/projects/<?= $project->slug ?>"><?= $goal->name ?></a>
             </h3>
              
             <div class="summary">

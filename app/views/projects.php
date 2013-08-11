@@ -22,5 +22,6 @@
 <? foreach($this->categories as $category): ?>
 	<li><a href='/projects/categories/<?= $category->slug ?>'><?= $category->name ?> (<?= $category->numProjects ?>)</a></li>
 <? endforeach; ?>
+        <li><a href='/projects/'>All (<?= count($this->categories) ?>)</a></li>
 </ul>
 </div>

@@ -22,7 +22,7 @@ $(function() {
 
 });
 </script>
-<div class='row-fluid'>
+<div class='row'>
             <div class='titling span12'>
                 <h1 class='title'><?= $this->project->title ?><!--<a href="#faq_goal" role="button" data-toggle="modal"class='tooltipped' title='Click here for more info'><i class='icon-question-sign help-icon'></i></a>--></h1>
                 <h3 class='subtitle'><?= $this->project->subtitle ?></h3>
