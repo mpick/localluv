@@ -14,7 +14,7 @@ $('.tooltipped').tooltip();
 	<div class='span2'>
 	        <ul class='nav nav-pills nav-stacked'>
                         <li class="active"><a href="#home" data-toggle=tab>Profile</a></li>
-                        <li><a href="#projects" data-toggle=tab>My Projects</a></li>
+                        <li><a href="#bands" data-toggle=tab>My Bands</a></li>
                 </ul>
 	</div>
 <div class='span7'>
@@ -73,14 +73,12 @@ $('.tooltipped').tooltip();
 	        </form>
         </div>
 
-	        <div class='tab-pane fade in' id='projects'>
-		        <h2>My Projects</h2>
+	        <div class='tab-pane fade in' id='bands'>
+		        <h2>My Bands</h2>
 
 	                <? foreach($this->user->projects as $project): ?>
 	                <div class='well well-small'>
 		                <h3><a href='/projects/<?= $project->slug ?>'><img src='<?= $project->icon ?>' style='width: 64px'> <?= $project->title ?></a> <? if($project->isAdmin == 1): ?><a href='/manageProject/<?= $project->uuid ?>' class='btn pull-right'><i class='icon-edit'></i> Manage Project</a><? endif; ?></h3>
-		                <h4>User Role: <?= $project->userRole ?></h4>
-
 	                </div>
                         <? endforeach; ?>
 	        </div>

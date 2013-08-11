@@ -74,6 +74,8 @@ define('WEPAY_CLIENT_ID','114857');
 define('WEPAY_CLIENT_SECRET', '68b0c3f879');
 define('WEPAY_ACCOUNT_ID', '1254906500');	
 
+define('IMAGEROOT', $_SERVER['DOCUMENT_ROOT'] . "/images/");
+
 if (strstr($server, 'stage')) {
 
 

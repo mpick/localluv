@@ -36,15 +36,15 @@
 ini_set('display_errors', '1');
   ?>
   <!-- Header -->
-<div class="row-fluid" style="min-height: 100%; padding-bottom: 4em">
-    <div class="row-fluid" style="min-height: 100%; padding-bottom: 4em">
-    <div class='navbar navbar-fixed-top' style="margin-bottom:50px;">
+<div class="row-fluid" style=" padding-bottom: 4em">
+    <div class="row-fluid" style=" padding-bottom: 4em">
+    <div class='navbar navbar-fixed-top' style="margin-bottom:px;">
       <div class='navbar-inner'>
         <div class="container">
         <a class='brand' href='/'><img src="/images/bandaid_logo.png" style="height:30px" /></a>
         <ul class="nav">
           <li class='dropdown'>
-            <a href="/projects">Explore Tours</a>
+            <a href="/projects">Explore Bands</a>
           </li>
           <li class="divider-vertical"></li>
           <li><a href="/create">Register Band</a></li>

@@ -198,7 +198,7 @@ $(function() {
             <li><b><?= $this->currentGoal->daysUntilTarget ?></b><br> days left</li>
         </ul>
 <hr>
-<form action='/fundingredirectstripe' method='post'>
+<form action='/support/<?=$this->project->slug?>' method='get'>
     <input type='hidden' name='goalUUID' value='<?= $this->currentGoal->uuid ?>'>
 <fieldset>
     <label for='amount'><b>Support Amount</b></label>

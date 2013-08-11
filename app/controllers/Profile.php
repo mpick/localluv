@@ -57,7 +57,7 @@ addActivity("$user->fullname ($user->email) updated their profile");
 
 if(!empty($_FILES['avatar']['tmp_name'])){
 
-$destFile = $_SERVER['DOCUMENT_ROOT'] . "/../assets.beabandaid.co/images/avatars/".$user->uuid.".png";
+$destFile = $_SERVER['DOCUMENT_ROOT'] . "/images/avatars/".$user->uuid.".png";
 
 $newavatar = imageToPNG($_FILES['avatar']['tmp_name'],$destFile, 256);
 

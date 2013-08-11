@@ -8,11 +8,11 @@ $(function() {
 </script>
 <div class='span7 well well-small'>
 	<form action='' method='post' data-validate='parsley'>
-		<legend><b><span class='circled'>1</span></b> Submit Project For Proposal <span class='muted'><br><span class='circled'>2</span> Complete Project Details<br><span class='circled'>3</span> Complete Initial Goal Details</span></legend>
+		<legend><b><span class='circled'>1</span></b> Submit Band For Proposal <span class='muted'><br><span class='circled'>2</span> Complete Band Details<br><span class='circled'>3</span> Complete Initial Goal Details</span></legend>
 		<span class="help-block">Fields with <b>*</b> are required.</span>
 		<fieldset>
-			<label for='title' style='font-size: 1.25em' ><b>*</b> Project Title</label><input type='text'class='input-xxlarge' name='title' placeholder='Title' data-required='true' data-error-message='Your project has to have a title.' > 
-			<span class="help-block">This is the name of your project. This is the first thing people will see, so make it informative. And probably snappy. Yeah, snappy's good. Remember: <b>once you publish your project, you won't be able to change this.</b></span>
+			<label for='title' style='font-size: 1.25em' ><b>*</b> Band Title</label><input type='text'class='input-xxlarge' name='title' placeholder='Title' data-required='true' data-error-message='Your band has to have a name.' > 
+			<span class="help-block">This is the name of your band. This is the first thing people will see, so make it informative. And probably snappy. Yeah, snappy's good. Remember: <b>once you publish your band, you won't be able to change this.</b></span>
 		</fieldset>
 		<fieldset>
 			<label for='categoryID'><b>*</b> Category</label>
@@ -28,25 +28,25 @@ $(function() {
 			<span class="help-block">Don't obsess on this, just pick the best fit.</span>
 		</fieldset>
 		<fieldset>
-			<label for='mediaEmbed'>Video URL</label><input type='text'class='input-xxlarge' name='mediaEmbed' placeholder='e.g. http://vimeo.com/58933055' data-required='true' data-error-message='Your project has to have a video file.' ><span class="help-inline" style='font-size:0.9em'>Optional</span>
-			<span class="help-block">You need to have a video explaining your project.</span>
+			<label for='mediaEmbed'>Video URL</label><input type='text'class='input-xxlarge' name='mediaEmbed' placeholder='e.g. http://vimeo.com/58933055' data-required='true' data-error-message='Your band has to have a video file.' ><span class="help-inline" style='font-size:0.9em'>Optional</span>
+			<span class="help-block">You need to have a video explaining your band.</span>
 		</fieldset>
 		<fieldset>
-			<label for='summary'><b>*</b> Summary</label><textarea class='input-block-level' style='height: 12em' id='summary' name='summary' placeholder="60 words max." data-required='true' data-error-message='Your project has to have a summary.' ></textarea>
-<span class="help-block">This is your elevator pitch. In sixty words or less, tell us what your project is about.</span>
+			<label for='summary'><b>*</b> Summary</label><textarea class='input-block-level' style='height: 12em' id='summary' name='summary' placeholder="60 words max." data-required='true' data-error-message='Your band has to have a summary.' ></textarea>
+<span class="help-block">This is your elevator pitch. In sixty words or less, tell us what your band is about.</span>
 		</fieldset>
 		<hr>
 		<fieldset>
 			<legend>Initial Goal</legend>
-			<span class="help-block">In order to submit a project, you must have an initial goal already figured out. </span>
+			<span class="help-block">In order to submit a band, you must have an initial goal already figured out. </span>
 			<label for='goalTitle'><b>*</b> Title</label>
 
 			<input type='text' name='goalTitle'  class='input-xxlarge' placeholder='title of initial goal' data-required='true' data-error-message='Your goal has to have a title.' > 
-									<span class="help-block">Every <b>project</b> begins with a <b>goal</b>: this is your first one. Tell us what your first goal is, how much you need to achieve it, and the date you want it to be finished.</span>
+									<span class="help-block">Every <b>band</b> begins with a <b>goal</b>: this is your first one. Tell us what your first goal is, how much you need to achieve it, and the date you want it to be finished.</span>
 		</fieldset>
 				<fieldset>
 			<label for='goalMediaEmbed'>Media URL</label><input type='text'class='input-xxlarge' name='goalMediaEmbed' placeholder="e.g. http://vimeo.com/58933055" data-required='true' data-error-message='Your initial goal has to have a title.' > <span class="help-inline" style='font-size:0.9em'>Optional</span>
-			<span class='help-block'>This can be the same as your project's media embed, for now.</span>
+			<span class='help-block'>This can be the same as your band's media embed, for now.</span>
 		</fieldset>
 		<fieldset>
 			<label for='goalSummary'>Summary</label>
@@ -82,7 +82,7 @@ $(function() {
 	</select> 
 		</fieldset>
 		<fieldset>
-			<button type='submit' class='btn'>Submit Project For Proposal</button>
+			<button type='submit' class='btn'>Submit Band For Proposal</button>
 		</fieldset>
 	</form>
 </div>
@@ -90,7 +90,7 @@ $(function() {
 	<h3>step 1: submitting a project<br><span style='color: #f00'>(read this first!)</span></h3>
 	<p>So you want to create an openfire project? Awesome! There's some things you should know first, though.</p>
 <ul class='explanatory'>
-	<li><p><b>An openfire project is defined by multiple stages, or "goals".</b> This is one of the things that makes us different from other funding platforms: we're here to help you achieve larger, more complex projects, through a series of well-defined goals with individual funding targets. Reach a goal, and you can move on to the next one.</p><p>Think of them as mini-bosses; you have to beat each mini-boss to complete the game. :-)</p>
+	<li><p><b>An openfire project is defined by multiple stages, or "goals".</b> This is one of the things that makes us different from other funding platforms: we're here to help you achieve larger, more complex bands, through a series of well-defined goals with individual funding targets. Reach a goal, and you can move on to the next one.</p><p>Think of them as mini-bosses; you have to beat each mini-boss to complete the game. :-)</p>
 		<p>Initially, each goal must be accompanied by a financial target. As you complete goals, you'll be able to "unlock" the ability to add non-monetary goals, which your team and backers can help you complete in ways that don't necessarily involve money.</p></li>
 	<li><p><b>All openfire projects are curated</b>. That means that once you submit your project, it'll be sent to our team for review. You'll receive an email whether we approve it or reject it.</p>
 		<p>If we reject it, it doesn't mean we don't think your idea is great; it just means we don't think it's a fit for openfire. Don't be discouraged!</p>

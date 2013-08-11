@@ -238,7 +238,7 @@ $user->insert($params);
 
 
 if(!empty($params['avatar'])){
-	$saveto = $_SERVER['DOCUMENT_ROOT'] . "/../assets.beabandaid.co/images/avatars/".$user->uuid.".png";
+	$saveto = $_SERVER['DOCUMENT_ROOT'] . "/images/avatars/".$user->uuid.".png";
     $ch = curl_init ($avatar);
     curl_setopt($ch, CURLOPT_HEADER, 0);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);

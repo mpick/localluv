@@ -10,7 +10,7 @@
 
         $this->fullName = $this->firstName . " " . $this->lastName;
 
-        if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/../assets.beabandaid.co/images/avatars/" . $this->uuid . ".png")){
+        if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/images/avatars/" . $this->uuid . ".png")){
         	$this->avatar = "http://assets.beabandaid.co/images/avatars/" . $this->uuid . ".png";
         }else{
         	$this->avatar = "http://assets.beabandaid.co/images/avatars/openfire_default_avatar.png";

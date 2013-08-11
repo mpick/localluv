@@ -21,7 +21,7 @@ foreach($_POST['reward'] as $index=>$reward){
 
 	if(!empty($_FILES['rewardimages'][$index]['name'])){
 
-$destFile = $_SERVER['DOCUMENT_ROOT'] . "/../assets.beabandaid.co/images/rewards/".$reward->uuid.".png";
+$destFile = $_SERVER['DOCUMENT_ROOT'] . "/images/rewards/".$reward->uuid.".png";
 
 $rewardpic = imageToPNG($_FILES['rewardimages'][$index]['tmp_name'],$destFile, 1024);
 

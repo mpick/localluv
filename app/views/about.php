@@ -1,10 +1,28 @@
-<div class='span8 offset2'>
+<style>
+.inspiration p{margin-bottom: 1em;}
+</style>
+<div class='span12'>
+	<div class='span8 inspiration offset2' style='margin-top: 2em; font-size: 1.5em; line-height: 1.25em'>
 
-<div style='text-align:center'><img src='http://assets.beabandaid.co/images/collateral/change1.jpg' style='width: 100%'></div>
-	<h1>Some ideas aren't about the bottom line.</h1><br>
+<p>
+<b>Touring is an essential right of passage for bands aspiring to stardom.</b> But touring means leavin behind their most ardent local fans in the quest to spread their sound around the country. For even the most talented bands, it's a major uphill battle to build a geographically-diverse fan base, and find ways to monetize their efforts on tour to reach (or stay) in the black along the way.
+</p>
+<p>
+In short, touring is usually a lot like playing a  modern version of Oregon Trail when everything goes to hell in a hand-basket: tiny food budgets, questionable lodging, wagon breakdowns, and much, much more.
+</p>
 
-<div class='lead'><p>Some ideas are about making the world a better place, about providing people with the tools and services they need to empower themselves, to improve their lives. These are the ideas that truly change the world.</p>
+	<p style='font-size: 1.5em; text-align:center'>That's where BandAid comes in.</p>
 
-<p><b>Openfire</b>'s job is to connect the people who can turn these ideas into reality: visionaries, financial backers, collaborators, mentors, evangelists.</p>
+<p>We wanted to give bands a fighting chance against the harsh realities of touring. Musicians use <strong>BandAid</strong> so fans at home can support them while they're on the road" and cut the comma after road
+</p>
+<p>
+In short, we help fans feed the band.
+</p>
+<p>
+No other funding platform provides customized ways for touring bands to keep in touch with fans and support themselves while on the road. 
+</p>
+<p>
+<strong>BandAid</strong> was created by an 8-member boy band at Las Vegas StartupWeekend #6.
+</p>
 </div>
 </div>

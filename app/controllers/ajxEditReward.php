@@ -24,7 +24,7 @@ $params = array(
 $reward->update($params);
 
 if(!empty($_FILES['image'])){
-$destFile = $_SERVER['DOCUMENT_ROOT'] . "/../assets.beabandaid.co/images/rewards/".$reward->uuid.".png";
+$destFile = $_SERVER['DOCUMENT_ROOT'] . "/images/rewards/".$reward->uuid.".png";
 
 $rewardpic = imageToPNG($_FILES['image']['tmp_name'],$destFile, 1024);
 

@@ -80,7 +80,7 @@ Toro::serve(array(
     "users/:alpha" => "Users",
     "wePayProjectAccountHandler/:alpha" => "wePayProjectAccountHandler",
     "fundingRedirect" => "fundingRedirect",
-    "fundingredirectstripe" => "fundingRedirectStripe",
+    "support/:alpha" => "fundingRedirectStripe",
     "fundingComplete/:alpha/:alpha/:alpha/:alpha" => "fundingComplete",
     "exportDBToMongo" => "exportDBToMongo"
 ));
