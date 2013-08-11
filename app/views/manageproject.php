@@ -106,12 +106,13 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 
 
 </script>
-<div class='span12' style='margin-bottom: 2em;'>
+<div class="container">
+<div class='col-lg-12' style='margin-bottom: 2em;'>
 <h1><img class='pull-left' src='<?= $this->project->icon ?>' style='height: 64px; margin-right: 12px'> <?= $this->project->title ?></h1><h2><?= $this->project->subtitle ?></h2>
 </div>
 </div>
 <div class='row-fluid'>
-	<div class='span2'>
+	<div class='col-lg-2'>
 	<ul style="list-style:none">
 		<li>Total Funding: <b>$<? $this->project->getTotalFunding; echo $this->project->totalFunding; ?></b></li>
 		<!--<li>WePay Account: <b><a href='https://www.wepay.com/account/<?= $this->project->wePayAccountID ?>'><?= $this->project->wePayAccountID ?></a></b></li>-->
@@ -128,7 +129,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 
 	</ul>
 	</div>
-<div class='span7 tab-content'>
+<div class='col-lg-7 tab-content'>
 	<!-- <div class='tab-pane active' id='messages'>
 		<form action='/ajax/postMessage' method='post' id='postMessage' class='well well-small'>
 			<input type='hidden' name='projectID' value='<?= $this->project->uuid ?>'>
@@ -176,7 +177,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 						<fieldset>
 							<label for='icon'>Project Icon</label>
 							<div class='row-fluid'><div class='span2'><img src='<?= $this->project->icon ?>' style='width: 128px'></div>
-							<div class='span10'><input type='file' name='icon'>
+							<div class='col-lg-10'><input type='file' name='icon'>
 							<span class='help-block'>This is your project's logo or image. Maximum file size 5MB, and we'll resize it to 256x256 pixels. If you don't upload one, you get the default one, which is spiffy, but not as cool as having your own.</span>
 						</div>
 					</div>
@@ -199,7 +200,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
  			<h5><? if($goal->daysUntilTarget > 0): ?><?= $goal->daysUntilTarget ?> days remaining<? else: ?><?= ucwords($goal->status) ?><? endif; ?></h5>
 		</div>
 	<? endforeach; ?>
-	<a href='/manageProject/<?= $this->project->uuid ?>/addGoal' class='btn btn-success span6 offset3'><i class='icon-plus-sign'></i> Add A Tour</a>
+	<a href='/manageProject/<?= $this->project->uuid ?>/addGoal' class='btn btn-success col-lg-6 col-lg-offset-3'><i class='icon-plus-sign'></i> Add A Tour</a>
 	</div>
 	<div class='tab-pane fade in' id='team'>
 		<legend>Team <a href='#inviteUser' class='btn pull-right' data-toggle="modal"><i class='icon-plus-sign' style='color: #5bb75b'></i> Invite User</a></legend>
@@ -328,4 +329,5 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
   </div>
+</div>
 </div>

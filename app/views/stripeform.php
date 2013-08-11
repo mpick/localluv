@@ -6,34 +6,34 @@
 			<input type="hidden" name="<?=$key?>" value="<?=$val?>">
 		<?php endforeach ?>
 		<fieldset>
-			<legend>Legend</legend>
+			<p><legend>Support the Tour</legend></p>
 	  <div class="form-row">
 	  	<div class="control-group">
-              <label class="control-label">Name</label>
+              <p><label class="control-label">Name</label></p>
               <div class="controls">
-                <input type="text" size="20" name="name" value="<?=$this->name?>"/>
+                <p><input type="text" size="20" name="name" class='form-control' style="width:300px" value="<?=$this->name?>"/></p>
               </div>
             </div>
 	  	<div class="control-group">
-              <label class="control-label">Card Number</label>
+              <p><label class="control-label">Card Number</label></p>
               <div class="controls">
-                <input type="text" size="20" name="cardnumber" required/>
+                <input type="text" size="20" class='form-control' style="width:300px" name="cardnumber" required/>
               </div>
             </div>
 	  	<div class="control-group">
-              <label class="control-label" >CVC</label>
+              <p><label class="control-label" >CVC</label></p>
               <div class="controls">
-                <input type="text" size="4"  name="cvc" required/>
+                <input type="text" size="4"  class='form-control' style="width:300px"name="cvc" required/>
               </div>
             </div>
 	  	<div class="control-group">
-              <label class="control-label" >Expiration (MM/YYYY)</label>
+              <p><label class="control-label" >Expiration (MM/YYYY)</label></p>
               <div class="controls">
-	      		<input type="text" class="span2" size="2" name="exp-month" required/>
+	      		<p><input type="text" class="form-input" size="2" name="exp-month" required/>
 			    <span> / </span>
-			    <input type="text" class="span2" size="4" name="exp-year" required/>
+			    <input type="text" class="span2" size="4" name="exp-year" required/></p>
               </div>
-		 <button type="submit" class="btn">Join the Journey!</button>  	
+		 <p><button type="submit" class="btn">Join the Journey!</button></p>
 		</fieldset>
 	</form>
 </div>

@@ -36,8 +36,11 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
   });
 
 </script>-->
-<div id='loginModal' class="modal hide fade">
-  <div class="modal">
+  <!-- Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h3>Login</h3>
   </div>
@@ -57,6 +60,8 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
   <div class="modal-footer">
     <a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
   </div>
-</div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 </body>
 </html>

@@ -57,7 +57,7 @@ ini_set('display_errors', '1');
             </li>
 <? else: ?>
             <li class='dropdown' style='margin-left: 2em'>
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='muted'>Logged in as</span> <img src='<?= $user->avatar?>' class='avatar'> <?= $user->username ?> <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='muted'>Logged in as</span> <img src='<?= $user->avatar?>' height="20px" class='avatar'> <?= $user->username ?> <b class="caret"></b></a>
               <ul class='dropdown-menu'>
                 <li><a href='/profile'>My Profile</a></li>
                 <li><a href='/logout'>Logout</a></li>

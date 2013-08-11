@@ -49,7 +49,7 @@ $(function() {
 		<fieldset>
 			<legend>Your Tour</legend>
 			<span class="help-block">In order to submit a band, you must have an outline of your tour planned out. </span>
-			<p><label for='goalTitle'><b>*</b> What is your band calling the tour?</label></p>
+			<p><label for='goalTitle'><b>*</b> What is the name of your band's tour?</label></p>
 
 			<p><input type='text' name='goalTitle' id='goalTitle' class='input-xxlarge col-lg-4' placeholder='e.g. Macaroni Tour 2013' data-required='true' data-error-message='Your goal has to have a title.' > </p>
 				

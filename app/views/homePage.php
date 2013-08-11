@@ -13,7 +13,7 @@
         </h1>
       </div>
       <div class="col-lg-11">
-        <p> Bacon ipsum dolor sit amet ground round ribeye biltong ham hock short loin. Sirloin pork chop short ribs tri-tip tongue, flank andouille strip steak hamburger shoulder short loin drumstick ball tip. </p>
+        <p>Bands win. Fans win. Music wins.</p>
       </div>
     </div>
   </div>
