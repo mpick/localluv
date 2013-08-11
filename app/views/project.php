@@ -24,11 +24,11 @@ $(function() {
 </script>
 <div class='row-fluid'>
             <div class='titling span12'>
-                <h1 class='title'><?= $this->project->title ?><a href="#faq_goal" role="button" data-toggle="modal"class='tooltipped' title='Click here for more info'><i class='icon-question-sign help-icon'></i></a></h1>
+                <h1 class='title'><?= $this->project->title ?><!--<a href="#faq_goal" role="button" data-toggle="modal"class='tooltipped' title='Click here for more info'><i class='icon-question-sign help-icon'></i></a>--></h1>
                 <h3 class='subtitle'><?= $this->project->subtitle ?></h3>
              </div>
         <div class='goalChart span12'>
-            <h4>Goals<br><small class='muted'>Click a tour's name for details</small></h4>
+            <!--<h4>Goals<br><small class='muted'>Click a tour's name for details</small></h4>-->
 
             <table class='chart table table-bordered'>
                 <tbody>
@@ -62,7 +62,7 @@ $(function() {
 
     <li class='active'><a href='#about' data-toggle='tab'>Details</a></li>
     <li><a href='#updates' data-toggle='tab'>Updates <span class='badge'><?= count($this->project->updates) ?></span></a></li>
-    <li><a href='#team' data-toggle='tab'>Band <span class='badge'><?= count($this->project->team) ?></span></a></li>
+    <!--<li><a href='#team' data-toggle='tab'>Band <span class='badge'><?= count($this->project->team) ?></span></a></li>-->
 </ul>
 
 <div class="tab-content">
@@ -145,6 +145,8 @@ $(function() {
         <h4 style='text-align:center; margin-bottom: 2em'><a href='#'>See All Updates</a></h4>
     </div>
 
+    <?php /* No longer used 
+    ?>
     <div id='team' class='tab-pane fade in'>
         <h3>Team</h3>
         <ul class='teamMembers unstyled'>
@@ -166,6 +168,7 @@ $(function() {
          <? endforeach; ?>
         </ul>
     </div>
+    <?php  End of Team tab */ ?>
 
 
 
@@ -177,7 +180,8 @@ $(function() {
  <h3>Support The Band's Current Tour</h3>
 <!--<p style='text-align:center'><small><a href="#faq_goal" role="button" data-toggle="modal"><i class='icon-question-sign help-icon'></i> What's the difference between a project and a goal?</a></small></p>-->
     <div class='well well-small'>
-        <h3><a href='/goals/<?= $currentGoal->uuid ?>'><?= $currentGoal->name ?></a></h3>
+        <? /* ?> <h3><a href='/goals/<?= $currentGoal->uuid ?>'><?= $currentGoal->name ?></a></h3> <?php */ ?>
+        <h3><?= $currentGoal->name ?></h3>
         <div class='summary'><?= nl2br($currentGoal->summary) ?></div>
 <div class="progress small">
   <div class="bar bar-success" style="width: <?= $this->currentGoal->percentComplete ?>%;"></div>
@@ -200,7 +204,7 @@ $(function() {
     <label for='amount'><b>Support Amount</b></label>
     <div class="input-prepend">
   <span class="add-on">$</span>
-  <input class="input-xlarge" type="text" id='amount' name='amount' placeholder="$5 Minimum Pledge" value='<?= $this->currentGoal->suggestedAmount ?>'>
+  <input class="" type="text" id='amount' name='amount' placeholder="$5 Minimum Pledge" value='<?= $this->currentGoal->suggestedAmount ?>'>
 </div>
 <br>
 </fieldset>

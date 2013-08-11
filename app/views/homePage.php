@@ -1,3 +1,7 @@
+</div>
+</div>
+<div class="hero-unit">
+
 <? global $user; global $embedly; $partials = new Templater(); ?>
      <div class="splash-row">
         <div class="row-fluid">
@@ -18,14 +22,20 @@
           </div>
         </div>
           </div>
-          
+           
       </div>
     </div>
+  </div> <!--end hero unit-->
+<div class='container-fluid'> <!--container start-->
+  <?php 
+  error_reporting(E_ALL);
+ini_set('display_errors', '1');
+  ?>
     <hr>
     <div class="row-fluid max1000">
       
       
-      <!--<div class="featuredProjects">
+      <div class="featuredProjects">
         <h2>
           Featured Projects
         </h2>
@@ -62,6 +72,7 @@
       <? endforeach; ?>
     </ul>
       </div>-->
+
       <div class="featuredGoals">
         <h2>
             Featured Tours
@@ -92,4 +103,3 @@
 
       </div>
       <img src="http://ad.retargeter.com/seg?add=659127&t=2" width="1" height="1" />
-    </div>

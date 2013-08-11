@@ -35,6 +35,8 @@ $template->embedly = new Embedly(array(
 						));
 
 $template->publish();
+$template->load('stripform');
+$template->publish();
 
 $template->load('footer');
 $template->publish();

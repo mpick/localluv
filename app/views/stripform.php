@@ -41,8 +41,8 @@
 </div>
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript">
-
-$(document).ready(function() {
+console.log('hi');
+jQuery(document).ready(function() {
 	  // This identifies your website in the createToken call below
 	  Stripe.setPublishableKey('pk_test_5zburddCuXacBwyAHH3hliH5');
 		jQuery(function($) {
@@ -70,6 +70,7 @@ $(document).ready(function() {
 	    // token contains id, last4, and card type
 	    var token = response.id;
 	    // Insert the token into the form so it gets submitted to the server
+	    console.log(token);
 	    $form.append($('<input type="hidden" name="stripeToken" />').val(token));
 	    // and submit
 	    $form.get(0).submit();

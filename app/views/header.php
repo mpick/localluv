@@ -36,9 +36,11 @@
 ini_set('display_errors', '1');
   ?>
   <!-- Header -->
-  <div class='row-fluid'>
-    <div class='navbar navbar-static-top'>
+<div class="row-fluid" style="min-height: 100%; padding-bottom: 4em">
+    <div class="row-fluid" style="min-height: 100%; padding-bottom: 4em">
+    <div class='navbar navbar-fixed-top' style="margin-bottom:50px;">
       <div class='navbar-inner'>
+        <div class="container">
         <a class='brand' href='/'><img src="/images/bandaid_logo.png" style="height:30px" /></a>
         <ul class="nav">
           <li class='dropdown'>
@@ -75,9 +77,11 @@ ini_set('display_errors', '1');
             </li>
 <? endif; ?>
           </ul>
+        </div>
       </div>
     </div>
   </div>
+</div>
 <!-- /header -->
 
 <!-- Main body -->
