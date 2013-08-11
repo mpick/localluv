@@ -1,39 +1,28 @@
-</div>
-</div>
-<div class="hero-unit">
-
 <? global $user; global $embedly; $partials = new Templater(); ?>
-     <div class="splash-row">
-        <div class="row-fluid">
-          
-          <div class="span10 splash offset1" style="background-color: rgba(0, 0, 0, 0);">
-           <div class='row-fluid' style="background-color: rgba(0, 0, 0, 0); ">
-            <div class='span2 offset2' style="background-color: rgba(0, 0, 0, 0);margin-top:50px;">
-            <img width="200" src="img/bandaid_logo_white.png">
-          </div>
-          <div class='span7' style="background-color: rgba(0, 0, 0, 0);text-shadow: 2px 2px #2d2d2d; margin-top:25px;">
-            <h1 style="color:#ffffff;">
-              <strong>
-                <p>Support the tour.</p> <p>Experience the journey.</p>
-              </strong>
-              <br />
-              
-            </h1>
-            <p style='color:#fff; margin-left:-210px;margin-top:-10px;'> Bacon ipsum dolor sit amet ground round ribeye biltong ham hock short loin. Sirloin pork chop short ribs tri-tip tongue, flank andouille strip steak hamburger shoulder short loin drumstick ball tip. </p>
-          </div>
-        </div>
-          </div>
-           
+  <div class="jumbotron">
+    <div class="container">
+      <div class="col-lg-2 col-lg-offset-1">
+        <img width="200" src="img/bandaid_logo_white.png">
+      </div>
+      <div class="col-lg-7">
+        <h1>
+          <strong>
+            <p>Support the tour.</p>
+            <p>Experience the journey.</p>
+          </strong> 
+        </h1>
+        <p style='color:#fff; margin-left:-210px;margin-top:-10px;'> Bacon ipsum dolor sit amet ground round ribeye biltong ham hock short loin. Sirloin pork chop short ribs tri-tip tongue, flank andouille strip steak hamburger shoulder short loin drumstick ball tip. </p>
       </div>
     </div>
-  </div> <!--end hero unit-->
-<div class='container-fluid'> <!--container start-->
+  </div>
+          
+<div class='container'> <!--container start-->
   <?php 
   error_reporting(E_ALL);
 ini_set('display_errors', '1');
   ?>
     <hr>
-    <div class="row-fluid max1000">
+
       
       
       <?php /*
@@ -76,7 +65,7 @@ ini_set('display_errors', '1');
       </div>
       */ ?>
 
-      <div class="featuredGoals">
+      <div class="col-lg-3 col-lg-offset-1 featuredprojects">
         <h2>
             Featured Tours
         </h2>

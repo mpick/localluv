@@ -6,7 +6,7 @@
 <title>BandAid<? if(!empty($this->title)) echo " | " . $this->title ?></title>
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/elusive-webfont.css" rel="stylesheet" media="screen">
-<link href="/css/style_new.css" rel="stylesheet" media="screen">
+<link href="/css/bootstrap.css" rel="stylesheet" media="screen">
 <? if(!empty($this->css)): foreach($this->css as $url): ?>
 <link rel="stylesheet" href="<?= $url ?>">
 <? endforeach; endif; ?>
@@ -35,54 +35,16 @@
   error_reporting(E_ALL);
 ini_set('display_errors', '1');
   ?>
-  <!-- Header -->
-<div class="row-fluid" style=" padding-bottom: 4em">
-    <div class="row-fluid" style=" padding-bottom: 4em">
-    <div class='navbar navbar-fixed-top' style="margin-bottom:px;">
-      <div class='navbar-inner'>
-        <div class="container">
-        <a class='brand' href='/'><img src="/images/bandaid_logo.png" style="height:30px" /></a>
-        <ul class="nav">
-          <li class='dropdown'>
-            <a href="/projects">Explore Bands</a>
-          </li>
-          <li class="divider-vertical"></li>
+      <!-- Static navbar -->
+<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="/projects">Explore Bands</a></li>
           <li><a href="/createProject">Register Band</a></li>
-          <li class="divider-vertical"></li>
           <li><a href="/about">About Us</a></li>
-          </ul>
-          <ul class='nav pull-right'>
-          <li class="divider-vertical"></li>
-
-<!--             <li>
-              <form class='navbar-form form-search' action='/search' method='get'>
-                <input type='text' class='input-medium search-query' name='q'> <button class='btn'type='submit'>Search</button>
-              </form>
-            </li>
-          <li class="divider-vertical"></li> -->
-
-    <? if(empty($user->id)): ?>
-
-            <li class='dropdown'>
-             <a href="#loginModal" role="button" data-toggle="modal">Login/Signup</a>
-
-            </li>
-<? else: ?>
-            <li class='dropdown' style='margin-left: 2em'>
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='muted'>Logged in as</span> <img src='<?= $user->avatar?>' class='avatar'> <?= $user->username ?> <b class="caret"></b></a>
-              <ul class='dropdown-menu'>
-                <li><a href='/profile'>My Profile</a></li>
-                <li><a href='/logout'>Logout</a></li>
-              </ul>
-            </li>
-<? endif; ?>
-          </ul>
-        </div>
+        </ul>
+        <h3 class="text-muted"><a href="/"><img src="../images/bandaid_logo.png" height="35px"></a></h3>
       </div>
-    </div>
-  </div>
 </div>
-<!-- /header -->
-
 <!-- Main body -->
-<div class='row-fluid' style='min-height: 100%; padding-bottom: 4em'>
+

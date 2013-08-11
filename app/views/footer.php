@@ -1,19 +1,17 @@
 </div>
-<div class='container-fluid'>
-  <footer class='navbar'>
-    <div class='navbar-inner'>
-      <!--<a class='brand'><img src='/img/logo.png' style='height:1em'></a>-->
-      <ul class='nav'>
+<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
         <li><a href='#'>Privacy Policy</a></li>
         <!--<li><a href='#'>Team</a></li>-->
         <!--<li><a href='#'>Blog</a></li>-->
         <li><a href='mailto:wanna@beabandaid.co'>Contact Us</a></li>
-      </ul>
-      <div class='navbar-text clearfix span12' style='font-size:0.8em; text-align:center'>
-                <p>We respect your right to privacy. We will not give your name or personal information to third parties. No one will ever see your credit card information besides our payment processor, not even us.</p>
-              </div>
-      <div class='navbar-text pull-right'>All content &copy; 2013 BandAid.</div>
-    </div>
+        </ul>
+      </div>
+      <div class='navbar-text clearfix col-lg-12' style='font-size:0.8em; text-align:center'>
+        <p>We respect your right to privacy. We will not give your name or personal information to third parties. No one will ever see your credit card information besides our payment processor, not even us.</p>
+      </div>
+      <div class='navbar-text clearfix pull-right'style='font-size:0.8em; text-align:center'>All content &copy; 2013 BandAid.</div>
   </footer>
   </div>
 

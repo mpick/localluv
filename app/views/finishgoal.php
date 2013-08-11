@@ -21,7 +21,8 @@ var i = 0;
 });
 
 </script>
-<div class='span7'>
+<div class="container">
+<div class='col-lg-7'>
 	<legend><span class='muted'><span class='circled'>1</span>Submit Project For Proposal</span><br><span class='muted'><span class='circled'>2</span> Complete Project Details<br></span><b><span class='circled'>3</span></b> Complete Initial Goal Details</legend>
 		<form enctype="multipart/form-data" action='' method='post' data-validate='parsley'>
 			<input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
@@ -92,7 +93,7 @@ var i = 0;
 
 		</form>
 </div>
-<div class='span4'>
+<div class='col-lg-4'>
 	<h3><i class='icon-info-sign'></i> Adding A Goal</h3>
 <p><b>Goals</b> are the most important part of your project: they're how you raise money and bring in collaborators for your project.</p>
 <p>When creating a goal for your project, remember that a goal must be specific, finite, realistic, and achievable with the target funding amount you set. An example of a bad goal might be &quot;Change The World&quot; or &quot;End World Hunger&quot;. (Unless you can actually do these things in a finite amount of time with a realistic amount of money, in which case, we're really excited to see your plan.)</p>

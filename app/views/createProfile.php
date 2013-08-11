@@ -1,4 +1,5 @@
-<div class='span8 offset2' style='margin-top:2em'>
+<div class="container">
+<div class='col-lg-8 col-lg-offset-2'>
 <? if(!empty($this->params['doesExist'])): ?>
  <div class='alert'>There is already a user with that username. Are you sure you don't already have an account? If so, you can already <a href='/login'>log in</a>.</div>
 <? endif; ?>

@@ -6,7 +6,8 @@ $(function() {
 
 });
 </script>
-<div class='span10 offset1 well well-small'> 
+<div class="container">
+<div class='col-lg-10 col-lg-offset-1'> 
 	<div class="alert alert-danger">
 		<strong>Fields with * are required.</strong>
 		<br />

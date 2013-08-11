@@ -1,6 +1,5 @@
 <? global $user; global $embedly; $partials = new Templater(); ?>
             <? $currentGoal = new Goal($this->project->currentGoalID) ?>
-</div>
 <script>
 $(function() {
     $('.popovered').popover({placement: get_popover_placement});
@@ -22,12 +21,13 @@ $(function() {
 
 });
 </script>
+<div class="container">
 <div class='row'>
-            <div class='titling span12'>
+            <div class='titling col-lg-12'>
                 <h1 class='title'><?= $this->project->title ?><!--<a href="#faq_goal" role="button" data-toggle="modal"class='tooltipped' title='Click here for more info'><i class='icon-question-sign help-icon'></i></a>--></h1>
                 <h3 class='subtitle'><?= $this->project->subtitle ?></h3>
              </div>
-        <div class='goalChart span12'>
+        <div class='goalChart col-lg-12'>
             <!--<h4>Goals<br><small class='muted'>Click a tour's name for details</small></h4>-->
 
             <table class='chart table table-bordered'>
@@ -56,7 +56,7 @@ $(function() {
             </table>
         </div>
     </div>
-    <div class='span8 project'>
+    <div class='col-lg-8 project'>
 
 <ul class='nav nav-tabs project-nav'>
 
@@ -176,7 +176,7 @@ $(function() {
 
 </div>
     </div>
-<div class='span4 goal sidebar'>
+<div class='col-lg-4 goal sidebar'>
  <h3>Support The Band's Current Tour</h3>
 <!--<p style='text-align:center'><small><a href="#faq_goal" role="button" data-toggle="modal"><i class='icon-question-sign help-icon'></i> What's the difference between a project and a goal?</a></small></p>-->
     <div class='well well-small'>

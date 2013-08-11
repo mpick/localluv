@@ -1,4 +1,5 @@
 <? global $user; ?>
+<div class="container">
 <div class='span7 well well-small'>
 	<legend><span class='muted'><span class='circled'>1</span>Submit Project For Proposal</span><br><b><span class='circled'>2</span></b> Complete Project Details<br><span class='muted'><span class='circled'>3</span> Complete Initial Goal Details</span></legend>
 
@@ -80,4 +81,5 @@
 		<h3>step 2: completing project setup</h3>
 		<p>Congratulations! Your project has been approved by openfire. Now you just need to add some more information before you can publish it and start pushing towards victory.</p>
 
+</div>
 </div>
