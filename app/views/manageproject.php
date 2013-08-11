@@ -112,19 +112,19 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 </div>
 <div class='row-fluid'>
 	<div class='span2'>
-	<ul>
+	<ul style="list-style:none">
 		<li>Total Funding: <b>$<? $this->project->getTotalFunding; echo $this->project->totalFunding; ?></b></li>
-		<li>WePay Account: <b><a href='https://www.wepay.com/account/<?= $this->project->wePayAccountID ?>'><?= $this->project->wePayAccountID ?></a></b></li>
+		<!--<li>WePay Account: <b><a href='https://www.wepay.com/account/<?= $this->project->wePayAccountID ?>'><?= $this->project->wePayAccountID ?></a></b></li>-->
 	</ul>
 			<ul class='nav nav-pills nav-stacked'>
 		<!-- <li class='active'><a href='#messages' data-toggle='tab'>Messages</a> -->
 		<li class='active'><a href='#overview' data-toggle=tab>Project Overview</a>
 		<li><a href='#goals' data-toggle=tab>Tours</a>
-		<li><a href='#team' data-toggle=tab>Team</a>
+		<!--<li><a href='#team' data-toggle=tab>Team</a>-->
 		<li><a href='#updates' data-toggle=tab>Updates <? if(count($this->project->updates > 0)): ?>(<?= count($this->project->updates) ?>)<? endif; ?></a>
 		<li><a href='#backers' data-toggle=tab>Backers <? if(count($this->project->backers > 0)): ?>(<?= count($this->project->backers) ?>)<? endif; ?></a>
 
-		<li><a href='#press' data-toggle=tab>Press</a>
+		<!--<li><a href='#press' data-toggle=tab>Press</a>-->
 
 	</ul>
 	</div>
@@ -167,11 +167,12 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 							<textarea name='summary' id='summary' class='input-xxlarge' style='height: 8em' data-required='true' data-error-message='Your project must have a summary.'><?= $this->project->summary ?></textarea>
 				 		</fieldset>
 
-						<fieldset>
+						<!--<fieldset>
 							<label for='description'>Description</label>
 							 
 							<textarea name='description' id='description' class='input-xxlarge' style='height: 12em' data-required='true' data-error-message='Your project must have a description.'><? if(!empty($this->project->description)): echo $this->project->description; else: echo $this->project->initialProposal; endif; ?></textarea>
 				 		</fieldset>
+				 		-->
 						<fieldset>
 							<label for='icon'>Project Icon</label>
 							<div class='row-fluid'><div class='span2'><img src='<?= $this->project->icon ?>' style='width: 128px'></div>
@@ -191,14 +192,14 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 		<legend>Tours</legend>
 		<? foreach($this->project->goals as $goal): ?>
 		<div class='goal well well-small'>
-			<div><h3 class='pull-left'><a href='/manageGoal/<?= $goal->uuid ?>'><?= $goal->name ?></a> <? if($goal->isCurrent == 1): ?><span class='label label-info'>current</span><? endif; ?></h3><a href='/goals/<?= $goal->uuid ?>' class='btn pull-right'><i class='icon-eye-open'></i> View Tour</a><div class='clearfix'></div><a href='/manageGoal/<?= $goal->uuid ?>' class='btn pull-right'><i class='icon-eye-open'></i> Manage Rewards</a><div class='clearfix'></div></div>
+			<div><h3 class='pull-left'><?= $goal->name ?> <? if($goal->isCurrent == 1): ?><span class='label label-info'>current</span><? endif; ?></h3><a href='/projects/<?php echo $this->project->slug; ?>' class='btn pull-right'><i class='icon-eye-open'></i> View Tour</a><div class='clearfix'></div><a href='/manageGoal/<?= $goal->uuid ?>' class='btn pull-right'><i class='icon-eye-open'></i> Manage Rewards</a><div class='clearfix'></div></div>
 			<div><?= trimtopcount($goal->description, 2) ?></div>
 			<h5>Status: <?= ucwords($goal->status) ?></h5>
  			<h5>Funds: <b>$<?= number_format($goal->currentAmount, 2) ?></b> of <b>$<?= number_format($goal->targetAmount, 2) ?></b> raised from <b><?= count($goal->backers) ?></b> backers</h5>
  			<h5><? if($goal->daysUntilTarget > 0): ?><?= $goal->daysUntilTarget ?> days remaining<? else: ?><?= ucwords($goal->status) ?><? endif; ?></h5>
 		</div>
 	<? endforeach; ?>
-	<a href='/manageProject/<?= $this->project->uuid ?>/addGoal' class='btn btn-success span6 offset3'><i class='icon-plus-sign'></i> Add A Goal</a>
+	<a href='/manageProject/<?= $this->project->uuid ?>/addGoal' class='btn btn-success span6 offset3'><i class='icon-plus-sign'></i> Add A Tour</a>
 	</div>
 	<div class='tab-pane fade in' id='team'>
 		<legend>Team <a href='#inviteUser' class='btn pull-right' data-toggle="modal"><i class='icon-plus-sign' style='color: #5bb75b'></i> Invite User</a></legend>
@@ -235,7 +236,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 		<fieldset>
 			<label for='public'>Type</label>
 			<p><input type='radio' name='public' value='0'> <b>Private</b>: This update will be visible and emailed to team members and backers only.</p>
-			<p><input type='radio' name='public' value='1' checked='checked'> <b>Public</b>: This update will be visible on this goal's page to anyone, as well as being emailed to backers and team members.</p>
+			<p><input type='radio' name='public' value='1' checked='checked'> <b>Public</b>: This update will be visible on this tours page to anyone, as well as being emailed to backers and team members.</p>
 		</fieldset>
 			<div class='form-actions' style='text-align:right'>
 				<button type='submit' class='btn'>Post Update</button>
@@ -295,7 +296,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 			</thead>
 			<tbody>
   <?foreach($this->project->backers as $backer): ?>
-  <tr><td><a href='/users/<?= $backer->username ?>'><img src='<?= $backer->avatar ?>' class='avatar-tiny'> <?= $backer->username ?></td><td><?= $backer->email ?></td><td><a href='/manageGoal/<?= $backer->goal->uuid ?>'><?= $backer->goal->name ?></a></td><td>$<?= $backer->amount ?></td><td><?= $backer->reward->name ?></td><td><?= $backer->rewardStatus ?></td></tr>
+  <tr><td><a href='/users/<?= $backer->username ?>'><img src='<?= $backer->avatar ?>' class='avatar-tiny'> <?= $backer->username ?></td><td><?= $backer->email ?></td><td><?= $backer->goal->name ?></td><td>$<?= $backer->amount ?></td><td><?= $backer->reward->name ?></td><td><?= $backer->rewardStatus ?></td></tr>
 <? endforeach; ?>
 </tbody>
 </table>

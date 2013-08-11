@@ -81,10 +81,10 @@ function post(){
 	$params = array(
 		"projectID" => $project->id,
 		"uuid" => md5(microtime()),
-		"mediaEmbed" => $_POST['goalMediaEmbed'],
+		//"mediaEmbed" => $_POST['goalMediaEmbed'],
 		"name" => $goalTitle,
 		"slug" => slugify($goalTitle),
-		"summary" => $_POST['goalSummary'],
+		//"summary" => $_POST['goalSummary'],
 		"description" => $goalDescription,
 		"targetAmount" => $targetAmount,
 		"targetDate" => $goalTarget,

@@ -12,6 +12,10 @@
 .hero-unit h1 {
         font-size: 56px;
 }
+.create-project li.custom-error-message {
+        color: red;
+        list-style:none;
+}
 .create-project label{
         font-weight: 700;
         font-size: 1.25em;

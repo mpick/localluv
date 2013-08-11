@@ -21,7 +21,7 @@ $(function() {
 		</fieldset>
 		<fieldset>
 			<label for='categoryID'><b>*</b> Genre</label>
-			<select name='categoryID'>
+			<select id='categoryID' name='categoryID'>
 				<? foreach($this->categories as $category): ?>
 				<option value='<?= $category->id ?>' title='<?= $category->description ?>'><?= $category->name ?></option>
 				<? if(!empty($category->subcategories)): foreach($category->subcategories as $subcat): ?>
@@ -46,31 +46,31 @@ $(function() {
 			<span class="help-block">In order to submit a band, you must have an initial tour already figured out. </span>
 			<label for='goalTitle'><b>*</b> What is your band calling the tour?</label>
 
-			<input type='text' name='goalTitle'  class='input-xxlarge' placeholder='e.g. Macaroni Tour 2013' data-required='true' data-error-message='Your goal has to have a title.' > 
+			<input type='text' name='goalTitle' id='goalTitle' class='input-xxlarge' placeholder='e.g. Macaroni Tour 2013' data-required='true' data-error-message='Your goal has to have a title.' > 
 				
 		</fieldset>
 		<fieldset>
-			<label for='goalSummary'>Short Tour Details</label>
-			<textarea class='input-block-level' style='height: 12em' id='goalSummary' name='goalSummary' placeholder="60 words max" data-required='true' data-error-message='Your goal has to have a summary.' ></textarea>
+			<label for='goalDescription'><b>*</b> Short Tour Details</label>
+			<textarea class='input-block-level' style='height: 12em' id='goalDescription' name='goalDescription' placeholder="60 words max" data-required='true' data-error-message='Your goal has to have a summary.' ></textarea>
 		</fieldset>
 		<fieldset>
 			<label for='targetAmount'><b>*</b> Tour Funding Goal</label><div class="input-prepend" style='display:inline'>
   <span class="add-on">$</span>
-  <input class="input-xxl" name='targetAmount' type="text" placeholder="In US dollars"  data-required='true' data-error-message='Your goal has to have a funding target.'> 
+  <input class="input-xxl" id='targetAmount' name='targetAmount' type="text" placeholder="In US dollars"  data-required='true' data-error-message='Your goal has to have a funding target.'> 
 </div> 
 		</fieldset>
 		<fieldset>
 			<label for='targetMonth'><b>*</b> When is your tour over?</label>
-			<select name='targetMonth'>
+			<select id='targetMonth' name='targetMonth'>
 			<? for($i = 1; $i < 13; $i++): ?>
 			<option value='<?= sprintf("%02d", $i) ?>'<? $nextMonth = sprintf("%02d", $i); if($nextMonth == date("m") + 1){ echo " selected='selected'";} ?>><?= date("F", mktime(0, 0, 0, $i, 10)) ?></option>
 		<? endfor; ?>
-	</select> <select name='targetDay' class='input-small'>
+	</select> <select id='targetDay' name='targetDay' class='input-small'>
 			<? for($i = 1; $i < 32; $i++): ?>
 			<option value='<?= sprintf("%02d", $i) ?>'<? $thisDay = sprintf("%02d", $i); if($thisDay == date("d")){ echo " selected='selected'";} ?>><?= sprintf("%02d", $i) ?></option>
 		<? endfor; ?>
 	</select>
-	</select> <select name='targetYear' class='input-small'>
+	</select> <select id='targetYear' name='targetYear' class='input-small'>
 			<? for($i = 0; $i < 2; $i++): ?>
 			<option value='<?= date("Y") + $i ?>'><?= date("Y") + $i ?></option>
 		<? endfor; ?>

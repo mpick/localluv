@@ -204,7 +204,7 @@ $(function() {
     <label for='amount'><b>Support Amount</b></label>
     <div class="input-prepend">
   <span class="add-on">$</span>
-  <input class="" type="text" id='amount' name='amount' placeholder="$5 Minimum Pledge" value='<?= $this->currentGoal->suggestedAmount ?>'>
+  <input class="" type="number" id='amount' name='amount' min= "<?=$this->currentGoal->suggestedAmount?>" placeholder="$5 Minimum Pledge" value='<?= $this->currentGoal->suggestedAmount ?>'>
 </div>
 <br>
 </fieldset>
