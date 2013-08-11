@@ -1,6 +1,6 @@
-<? $rewardform = "\"<form id='addRewardForm' enctype='multipart/form-data' action='/ajax/addReward' method='post'><input type='hidden' name='MAX_FILE_SIZE' value='10000000' /><input type='hidden' name='goalID' value='" . $this->goal->id . "'><div class='reward well well-small' id='reward\" + i + \"'><fieldset><label for='reward[\" + i + \"][name]'>Reward Name</label><input type='text' name='reward[\" + i + \"][name]' class='input-xxlarge'></fieldset><fieldset><label for='image'>Reward Image</label><input type='file' name='rewardimages[\" + i + \"]'></fieldset><fieldset><label for='description'>Description</label><textarea name='reward[\" + i + \"][description]' class='input-xxlarge'></textarea></fieldset><fieldset><label for='reward[\" + i + \"][minAmount]'>Funding Amount</label>$<input type='text' name='reward[\" + i + \"][minAmount]' value='10'></fieldset><fieldset><label for='numTotal'>Number Available</label><input type='text' name='reward[\" + i + \"][numTotal]'></fieldset><div class='form-actions'>";
+<? $rewardform = "\"<form id='addRewardForm' enctype='multipart/form-data' action='/ajax/addReward' method='post'><input type='hidden' name='MAX_FILE_SIZE' value='10000000' /><input type='hidden' name='goalID' value='" . $this->goal->id . "'><div class='reward well well-small' id='reward\" + i + \"'><fieldset><label for='reward[\" + i + \"][name]'>Tour Perk Name</label><input type='text' name='reward[\" + i + \"][name]' class='input-xxlarge'></fieldset><fieldset><label for='image'>Tour Perk Image</label><input type='file' name='rewardimages[\" + i + \"]'></fieldset><fieldset><label for='description'>Description</label><textarea name='reward[\" + i + \"][description]' class='input-xxlarge'></textarea></fieldset><fieldset><label for='reward[\" + i + \"][minAmount]'>Funding Amount</label>$<input type='text' name='reward[\" + i + \"][minAmount]' value='10'></fieldset><fieldset><label for='numTotal'>Number Available</label><input type='text' name='reward[\" + i + \"][numTotal]'></fieldset><div class='form-actions'>";
 
-if($this->goal->status == 'published') $rewardform .= "<button class='btn btn-success' name='action' value='published' type='submit'>Publish Reward</button>"; 
+if($this->goal->status == 'published') $rewardform .= "<button class='btn btn-success' name='action' value='published' type='submit'>Publish Tour Perk</button>"; 
 $rewardform .="<button class='btn btn-success' name='action' value='draft' type='submit'>Save As Draft</button> <span class='removeReward btn' data-parent='reward\" + i + \"'>Cancel</span></div></form>\"";
 
 ?>
@@ -53,7 +53,7 @@ console.log(data.action);
 			theForm.html(data.html);
 		}
 
-		$('body').prepend("<div style='position:fixed; top:0; left: 0; width: 90%; z-index:99999' class='alert'><button type='button' class='close' data-dismiss='alert'>&times;</button>The reward has been " + data.action + "</div>");
+		$('body').prepend("<div style='position:fixed; top:0; left: 0; width: 90%; z-index:99999' class='alert'><button type='button' class='close' data-dismiss='alert'>&times;</button>The tour perk has been " + data.action + "</div>");
 
 	}
 });
@@ -73,13 +73,13 @@ console.log(data.action);
 	<div class='span2'>
 			<ul class='nav nav-pills nav-stacked'>
 				<li class='active'><a href='#overview' data-toggle=tab>Overview</a></li>
-		<li><a href='#details' data-toggle=tab>Goal Details</a>
+		<li><a href='#details' data-toggle=tab>Tour Details</a>
 		<li><a href='#backers' data-toggle=tab>Backers <? if(count($this->goal->backers > 0)): ?>(<?= count($this->goal->backers) ?>)<? endif; ?></a>
-		<li><a href='#rewards' data-toggle=tab>Rewards</a>
+		<li><a href='#rewards' data-toggle=tab>Tour Perks</a>
 
 	</ul>
 	</div>
-<div class='span7 tab-content'>
+<div class='span10 tab-content'>
 	<div id='overview'  class='tab-pane fade in active'>
 		<legend>Overview</legend>
 		<div class='well well-small'>
@@ -165,7 +165,7 @@ console.log(data.action);
 		<table class='table table-striped'>
 			<thead>
 				<tr>
-					<th>User</th><th>Amount</th><th>Reward</th><th>Status</th>
+					<th>User</th><th>Amount</th><th>Tour Perk</th><th>Status</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -177,7 +177,7 @@ console.log(data.action);
 	</div>
 
 	<div id='rewards' class='tab-pane fade in'>
-		<legend>Rewards <span id='addReward' class='btn pull-right'><i class='icon-plus-sign'></i> Add Reward</span></legend>
+		<legend>Tour Perks <span id='addReward' class='btn pull-right'><i class='icon-plus-sign'></i> Add Tour Perk</span></legend>
 
 		<div id='rewardList'>
 			<? foreach($this->goal->rewards as $reward): ?>
@@ -190,14 +190,14 @@ console.log(data.action);
 					    <div class="controls">
 					      <div class="input-prepend">
 							  <span class="add-on">$</span>
-							  <input name='minAmount' class='span6' type="text" placeholder="Minimum Amount" value='<?= $reward->minAmount ?>' data-required='true' data-error-message='Your reward must have a minimum amount.'>
+							  <input name='minAmount' class='span6' type="text" placeholder="Minimum Amount" value='<?= $reward->minAmount ?>' data-required='true' data-error-message='Your tour perk must have a minimum amount.'>
 							</div>
 					    </div>
 				  </div>
 				  <div class="control-group">
 				    <label class="control-label" for="name">Name</label>
 					    <div class="controls">
-							  <input name='name' class='input-block-level' type="text" placeholder="Reward Name" value='<?= $reward->name ?>' data-required='true' data-error-message='Your reward must have a name.'>
+							  <input name='name' class='input-block-level' type="text" placeholder="Tour Perk Name" value='<?= $reward->name ?>' data-required='true' data-error-message='Your tour perk must have a name.'>
 					    </div>
 				  </div>
 
@@ -212,14 +212,14 @@ console.log(data.action);
 				  <div class="control-group">
 				    <label class="control-label" for="description">Description</label>
 					    <div class="controls">
-							  <textarea class='input-block-level' style='height: 8em' name='description' data-required='true' data-error-message='Your reward must have a description.'><?= nl2br($reward->description) ?></textarea>
+							  <textarea class='input-block-level' style='height: 8em' name='description' data-required='true' data-error-message='Your tour perk must have a description.'><?= nl2br($reward->description) ?></textarea>
 					    </div>
 				  </div>
 				   <div class="control-group">
 				    <label class="control-label" for="numTotal">Number Total</label>
 					    <div class="controls">
 							  <input name='numTotal' class='input-block-level' type="text" placeholder="Number Total" value='<?= $reward->numTotal ?>'>
-					    <span class='help-block'>If your reward is intangible, don't enter anything here or in the &quot;Number Still Available&quot; field below.</span>
+					    <span class='help-block'>If your tour perk is intangible, don't enter anything here or in the &quot;Number Still Available&quot; field below.</span>
 					    </div>
 
 				  </div>
@@ -231,7 +231,7 @@ console.log(data.action);
 				  </div>
 				  <div class='form-actions'>
 				  	<div>Status: <b><?= ucwords($reward->status) ?></b></div>
-				  	<div class='pull-right'><? if($reward->status == "draft"): ?><button type='submit' class='btn' name='action' value='draft'>Save Draft</button> <button type='submit' class='btn btn-success' name='action' value='published'>Publish Reward</button> <? else: ?> <button type='submit' class='btn btn-success' name='action' value='published'>Update Reward</button><? endif; ?></div> <button type='submit' class='pull-left btn btn-danger' name='action' value='delete'>Delete Reward</button>
+				  	<div class='pull-right'><? if($reward->status == "draft"): ?><button type='submit' class='btn' name='action' value='draft'>Save Draft</button> <button type='submit' class='btn btn-success' name='action' value='published'>Publish Tour Perk</button> <? else: ?> <button type='submit' class='btn btn-success' name='action' value='published'>Update Tour Perk</button><? endif; ?></div> <button type='submit' class='pull-left btn btn-danger' name='action' value='delete'>Delete Tour Perk</button>
 				  </div>				  
 </form>
 		<? endforeach; ?>
@@ -239,13 +239,3 @@ console.log(data.action);
 	</div>
 
 </div>
-<div class='span3'>
-	<h3><i class='icon-info-sign'></i> Adding A Goal</h3>
-<p><b>Goals</b> are the most important part of your project: they're how you raise money and bring in collaborators for your project.</p>
-<p>When creating a goal for your project, remember that a goal must be specific, finite, realistic, and achievable with the target funding amount you set. An example of a bad goal might be &quot;Change The World&quot; or &quot;End World Hunger&quot;. (Unless you can actually do these things in a finite amount of time with a realistic amount of money, in which case, we're really excited to see your plan.)</p>
-<p>Another bad goal might be &quot;Build New High School&quot; with a target funding amount of $2,000...because while the goal is realistic and finite, it's unlikely to be achieved with the funding amount you've decided upon.</p>
-<p>Each goal must have a <b>funding target</b> and a <b>target completion date</b> for raising those funds. Goals can be aimed at either <b>complete</b> funding (where your project only receives the funds if you meet your target amount by your target date) or <b>partial</b> funding (where you receive all funds, whether you meet your goal or not).</p><p>When you're first starting your openfire project, you'll only be able to create goals with complete funding; once you've met three of those, and proven your ability to get things done, you can begin adding partial goals.</p>
-<p><b>Currently, you can only have one current goal running at a time</b>. You cannot set a new goal to be current until the existing current goal has either failed or succeeded.</p>
-
-
-	</div>
