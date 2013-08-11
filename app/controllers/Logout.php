@@ -12,7 +12,7 @@ setcookie ("user[key]", "", time() - 3600,"/", HOSTNAME);
 
 				addActivity("$user->username ($user->email) logged out");
 
-				header("Location: " . $_SERVER['HTTP_REFERER']);
+				header("Location: " . "http://" . HOSTNAME);
 
 }
 

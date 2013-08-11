@@ -82,7 +82,9 @@ else{
 	//$return = 				header("Location: " . $_SERVER['HTTP_REFERER']);
 	$return = $_SERVER['HTTP_REFERER'];
 ;
-}
+}		
+			//var_dump($_SERVER);
+			$return = 'http://' . $_SERVER['HTTP_HOST'] . '/createProject'; // forcing this for the demo / pitch
 			header("Location: " . $return);
 
 			break;

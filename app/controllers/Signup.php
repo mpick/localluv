@@ -3,19 +3,19 @@
 function get(){
 
 
-$template = new Templater();
-$template->load('header');
-$template->title = "Signup";
-$template->publish();
+	$template = new Templater();
+	$template->load('header');
+	$template->title = "Signup";
+	$template->publish();
 
-$template = new Templater();
-$template->load('signup');
-$template->publish();
+	$template = new Templater();
+	$template->load('signup');
+	$template->publish();
 
 
-$template = new Templater();
-$template->load('footer');
-$template->publish();
+	$template = new Templater();
+	$template->load('footer');
+	$template->publish();
 
 }
 
@@ -62,8 +62,8 @@ $user->insert($params);
 
 $mail = new emailMessage();  // create a new object
 
-	$mail->subject = "Welcome to Openfire!";
-	$mail->body = "Welcome to Openfire! We just need you to verify your account for us. Please visit http://" . $_SERVER['SERVER_NAME'] . "/confirmSignup/" . $user->uuid . " to get started!";
+	$mail->subject = "Welcome to BandAid!";
+	$mail->body = "Welcome to BandAid! We just need you to verify your account for us. Please visit http://" . $_SERVER['SERVER_NAME'] . "/confirmSignup/" . $user->uuid . " to get started!";
 	$mail->to = $user->email;
 	$mail->send();
 

@@ -1,3 +1,22 @@
+#required-label {
+        color: red;
+}
+.hero-unit {
+        -webkit-border-radius:0px;
+        -moz-border-radius:0px;
+        border-radius:0px;
+}
+.hero-unit img {
+        margin-top: -10px;
+}
+.hero-unit h1 {
+        font-size: 56px;
+}
+.create-project label{
+        font-weight: 700;
+        font-size: 1.25em;
+        padding-top: 1em;
+}
 .navbar .nav li {
         padding-top: 5px;
 }

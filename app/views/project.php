@@ -80,7 +80,7 @@ $(function() {
                } 
             ?>    
         </div>
-                            <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Support The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?= $currentGoal->suggestedAmount ?> Minimum Pledge</small></a></div>
+                            <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Support The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?=$currentGoal->suggestedAmount?> Minimum Pledge</small></a></div>
         <div class='share well well-small'>
 <a class='btn btn-info' href="https://twitter.com/share?url=<?= urlencode('http://' . $_SERVER['SERVER_NAME'] .  '/projects/' . $this->project->slug) ?>
 &text=<?= urlencode($this->project->title . " (via @joinopenfire)") ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> <a class='btn btn-info' style='background: #596F90' href='https://www.facebook.com/dialog/feed?app_id=<?= FACEBOOK_APP_ID ?>&
@@ -112,7 +112,7 @@ $(function() {
 
                 <div class='summary'>
 
-               <span class='muted'>Summary:</span> <?= nl2br($this->project->summary) ?>
+               <span class='muted'>Band Description:</span> <?= nl2br($this->project->summary) ?>
             </div>
 
 
@@ -211,7 +211,7 @@ $(function() {
 <fieldset>
 <h3>Tour Perks</h3>
 <fieldset>
-    <label class='radio reward'><input type='radio' name='rewardUUID' value='0' checked='checked'> <h4><b>No Reward</b></h4></label>
+    <label class='radio reward'><input type='radio' name='rewardUUID' value='0' checked='checked'> <h4><b>I just want to give money</b></h4></label>
     <hr>
     <? foreach($this->currentGoal->rewards as $reward): ?><label class='radio reward'>
         <input type='radio' data-amount='<?= $reward->minAmount ?>' name='rewardUUID'><h4><b>$<?= $reward->minAmount ?></b> <?= $reward->name ?></h4>

@@ -31,7 +31,7 @@ $categories[] = $category;
 
 
 	if(empty($user->id)){
-	 echo "<div class='alert'>You must be logged in to create a band.</div>";
+	 echo "<div class='alert'>You must be logged in to register a band.</div>";
 	}else{
 
 	$template = new Templater();
@@ -101,7 +101,7 @@ function post(){
 	$sth = $dbh->prepare("insert into projectUsers (projectID, userID, type, isAdmin) values('$project->id','$user->id','1','1')");
 	$sth->execute();
 
-	$msg = "Thanks! Your project has been submitted to openfi.re. We'll get back to you. No, really. We'll call you.";
+	$msg = "Thanks! Your band has been registered. We'll get back to you to complete the tour creation process. No, really! We'll call you.";
 
 addActivity("$user->fullname ($user->email) created a project, &quot;$project->title&quot;");
 
