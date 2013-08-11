@@ -37,7 +37,7 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
 
 </script>-->
 <div id='loginModal' class="modal hide fade">
-  <div class="modal-header">
+  <div class="modal">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
     <h3>Login</h3>
   </div>

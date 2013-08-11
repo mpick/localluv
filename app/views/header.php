@@ -42,9 +42,17 @@ ini_set('display_errors', '1');
           <li><a href="/projects">Explore Bands</a></li>
           <li><a href="/createProject">Register Band</a></li>
           <li><a href="/about">About Us</a></li>
-              <? if(empty($user->id)): ?>
+
+<!--             <li>
+              <form class='navbar-form form-search' action='/search' method='get'>
+                <input type='text' class='input-medium search-query' name='q'> <button class='btn'type='submit'>Search</button>
+              </form>
+            </li>
+          <li class="divider-vertical"></li> -->
+
+    <? if(empty($user->id)): ?>
             <li class='dropdown'>
-                           <a href="#loginModal" role="button" data-toggle="modal">Login</a>
+             <a href="#loginModal" role="button" data-toggle="modal">Login</a>
 
             </li>
 <? else: ?>
