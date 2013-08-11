@@ -1,4 +1,5 @@
- <div class='span8' style='margin-top: 2em; margin-bottom: 2em'>
+<div class="container">
+ <div class='col-lg-8'>
     <h2>Create Account</h2>
     <form action='' method='post' data-validate="parsley">
     
@@ -29,3 +30,4 @@
 </form>
 
   </div>
+</div>

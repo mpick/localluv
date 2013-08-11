@@ -4,14 +4,16 @@
       <div class="col-lg-2 col-lg-offset-1">
         <img width="200" src="img/bandaid_logo_white.png">
       </div>
-      <div class="col-lg-7">
+      <div class="col-lg-8">
         <h1>
           <strong>
             <p>Support the tour.</p>
             <p>Experience the journey.</p>
           </strong> 
         </h1>
-        <p style='color:#fff; margin-left:-210px;margin-top:-10px;'> Bacon ipsum dolor sit amet ground round ribeye biltong ham hock short loin. Sirloin pork chop short ribs tri-tip tongue, flank andouille strip steak hamburger shoulder short loin drumstick ball tip. </p>
+      </div>
+      <div class="col-lg-11">
+        <p> Bacon ipsum dolor sit amet ground round ribeye biltong ham hock short loin. Sirloin pork chop short ribs tri-tip tongue, flank andouille strip steak hamburger shoulder short loin drumstick ball tip. </p>
       </div>
     </div>
   </div>
@@ -64,14 +66,15 @@ ini_set('display_errors', '1');
     </ul>
       </div>
       */ ?>
-
-      <div class="col-lg-3 col-lg-offset-1 featuredprojects">
+    </div>
+    <div class="featuredprojects">
+      <div class="col-lg-12">
         <h2>
             Featured Tours
         </h2>
         <ul class='thumbnails'>
         <? foreach($this->featuredGoals as $goal): $project = new Project($goal->projectID) ?>
-        <li class="goal span4">
+        <li class="goal col-lg-3">
             <div class="media">
                      <? //if(!empty($goal->mediaEmbed)){ if(empty($this->mediaWidth)) $this->mediaWidth = 280; $objs = $embedly->oembed(array('url' => $goal->mediaEmbed, 'maxwidth' => $this->mediaWidth)); if(!empty($objs[0]->html)) echo $objs[0]->html; } ?>      
                      <a title="<?= $project->title ?>" href="/projects/<?= $project->slug ?>"><img src='<?= $project->icon ?>' style='width: 100%;'></a>
@@ -94,4 +97,5 @@ ini_set('display_errors', '1');
     </ul>
 
       </div>
+    </div>
       <img src="http://ad.retargeter.com/seg?add=659127&t=2" width="1" height="1" />

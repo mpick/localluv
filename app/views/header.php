@@ -42,6 +42,20 @@ ini_set('display_errors', '1');
           <li><a href="/projects">Explore Bands</a></li>
           <li><a href="/createProject">Register Band</a></li>
           <li><a href="/about">About Us</a></li>
+              <? if(empty($user->id)): ?>
+            <li class='dropdown'>
+                           <a href="#loginModal" role="button" data-toggle="modal">Login</a>
+
+            </li>
+<? else: ?>
+            <li class='dropdown' style='margin-left: 2em'>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='muted'>Logged in as</span> <img src='<?= $user->avatar?>' class='avatar'> <?= $user->username ?> <b class="caret"></b></a>
+              <ul class='dropdown-menu'>
+                <li><a href='/profile'>My Profile</a></li>
+                <li><a href='/logout'>Logout</a></li>
+              </ul>
+            </li>
+<? endif; ?>
         </ul>
         <h3 class="text-muted"><a href="/"><img src="../images/bandaid_logo.png" height="35px"></a></h3>
       </div>

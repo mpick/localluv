@@ -184,7 +184,7 @@ $(function() {
         <h3><?= $currentGoal->name ?></h3>
         <div class='summary'><?= nl2br($currentGoal->summary) ?></div>
 <div class="progress small">
-  <div class="bar bar-success" style="width: <?= $this->currentGoal->percentComplete ?>%;"></div>
+  <div class="progress-bar progress-bar-success" style="width: <?= $this->currentGoal->percentComplete ?>%;"></div>
 </div>
 
                     <ul class='stats'>
@@ -202,8 +202,8 @@ $(function() {
     <input type='hidden' name='goalUUID' value='<?= $this->currentGoal->uuid ?>'>
 <fieldset>
     <label for='amount'><b>Support Amount</b></label>
-    <div class="input-prepend">
-  <span class="add-on">$</span>
+    <div class="input-group">
+  <span class="input-group-addon">$</span>
   <input class="" type="number" id='amount' name='amount' min= "<?=$this->currentGoal->suggestedAmount?>" placeholder="$5 Minimum Pledge" value='<?= $this->currentGoal->suggestedAmount ?>'>
 </div>
 <br>

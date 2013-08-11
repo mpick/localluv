@@ -56,6 +56,7 @@ body {
   line-height: 1em;
   margin-left: 75px;
   margin-bottom:20px;
+  color:#fff;
 
 }
 .jumbotron h1 {
@@ -98,5 +99,276 @@ body {
   .featuredprojects h2 {
     font-weight: 200;
   
+  }
+  body.project .summary, body.project .description {
+  font-weight: 300;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  }
+  body.project .project .stats{
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 2em;
+}
+
+body.project .project .stats b{
+  font-weight: 500;
+  }
+
+  body.project .sidebar ul.rewards li.reward{
+    margin-bottom: 2em;
+  }
+#required-label {
+        color: red;
+}
+.create-project li.custom-error-message {
+        color: red;
+        list-style:none;
+        font-size: 14px;
+}
+.create-project label{
+        font-weight: 700;
+        font-size: 1.25em;
+        padding-top: 1em;
+}
+.create-project button {
+        margin-top: 20px; 
+}
+.navbar .nav li {
+        padding-top: 5px;
+}
+a:hover{text-decoration: none}
+
+
+.project-icon-tiny, .avatar-tiny{
+  width: 16px;
+}
+
+.project-icon-small, .avatar-small{
+  width: 32px;
+}
+
+.project-icon-med, .avatar-med{
+  width: 64px;
+}
+
+.project-icon-large, .avatar-large{
+  width: 128px;
+}
+
+.project-icon-xlarge, .avatar-xlarge{
+  width: 256px;
+}
+
+.project-icon-inline, .avatar-inline{
+  height: 1em;
+}
+
+
+.container-fluid{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#amount {
+        max-width: 70%;
+        margin: 0px 5% 0px 0px;
+}
+
+h1, h2, h3, h4, h5{font-weight: 300}
+
+
+/* Josh's changes. Should wipe everything before this. */
+
+.logo{height: 1em;}
+
+img.avatar{height: 1em;}
+
+.splash{
+    background: #ffffff; /* Old browsers */
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.help-icon{
+  display: inline-block;
+  font-size: 14px;
+  color: #ccc;
+  padding-top: -50%;
+}
+
+.featuredProjects .stats, .featuredGoals .stats{
+  margin-top: 1em;
+  font-weight: 300;
+}
+
+.featuredProjects .summary, .featuredGoals .summary{
+  margin-top: -35px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  height: 12em;
+  min-height: 12em !important;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  padding: 9px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.featuredProjects h3, .featuredGoals h3{
+  line-height: 1.5em;
+  min-height: 3em;
+  text-align: center;
+}
+
+.goal {
+  padding-left: 0;
+  padding-right:30px;
+}
+
+.goal .stats li{
+  display: inline-block;
+  height: 40px;
+  margin-top: 0;
+}
+
+.goal .stats li b{
+  font-size: 1.25em;
+}
+
+.goal .stats li.divider-vertical{
+height: 40px;
+margin: 0 0px;
+border-left: 1px solid #f2f2f2;
+border-right: 1px solid #ffffff;
+}
+
+.sidebar .widget{
+    margin-bottom: 2em;
+}
+
+body.project .project, body.project .sidebar, body.goal .goal, body.goal .sidebar, body.fund .fund{margin-top: 2em;}
+
+body.project .titling{
+  text-align:center;
+  margin-bottom: 2em;
+}
+
+body.project h1.title, body.project h3.subtitle{
+  line-height: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+body.project .media{
+  text-align:center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+body.project .summary, body.project .description{
+  font-weight: 300;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+body.project .project .summary, body.goal .summary{
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+body.project .update{
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+body.project .update h4{
+  font-weight: bold;
+}
+
+body.project .update .meta{
+  font-size: 0.9em;
+  margin-left: px;
+  font-weight: bold;
+}
+body.project .update .body{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+
+
+body.project .update .privateOnly{
+  font-weight: 300;
+  font-style: italic;
+}
+
+body.project .teamMember, body.project .backer{
+  text-align:center;
+}
+
+.teamMember .role{
+  font-weight: bold;
+}
+
+body.project .project .stats{
+  font-size: 1.25em;
+  font-weight: 300;
+  margin-top: 2em;
+}
+
+body.project .project .stats b{
+  font-weight: 500;
+  }
+
+  body.project .sidebar ul.rewards li.reward{
+    margin-bottom: 2em;
+  }
+
+
+body.project li.goal.current{
+  background-color: #eee;
+}
+
+  body.project li.goal.current h3{
+    font-weight:bold;
+  }
+
+  body.project li.goal.success{
+    background-color: #eeffee;
+  }
+
+  body.project li.goal.failed{
+    background-color: #ffeeee;
+  }
+
+  body.project li.goal.future{
+    opacity: 0.5;
+
+  }
+
+  body.project li.goal .summary{
+    margin-bottom: 1em;
+  }
+
+  body.project li.member .bio{
+    font-size: 0.9em;
+  }
+  .stats {
+    margin-left:-25px;
+  }
+
+
+
+.chart .goal.success, .chart .goal.goal-met{background: #efe;}
+
+.chart .goal.failed{background: #fee;}
+.chart .goal.future{background: #eee;}
+
+.chart .popover{width: 500px;}
+
+
   }
 }

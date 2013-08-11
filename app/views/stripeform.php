@@ -1,5 +1,6 @@
+
 <div class="row">
-	<div class="span8 offset2">
+	<div class="col-lg-8 col-lg-offset-2">
 	<form action="" method="POST" class="form-horizontal" id="payment-form">
 		<?php foreach ($_GET as $key => $val): ?>
 			<input type="hidden" name="<?=$key?>" value="<?=$val?>">
@@ -35,5 +36,6 @@
 		 <button type="submit" class="btn">Join the Journey!</button>  	
 		</fieldset>
 	</form>
+</div>
 </div>
 </div>
