@@ -5,12 +5,18 @@
 			<input type="hidden" name="<?=$key?>" value="<?=$val?>">
 		<?php endforeach ?>
 		<fieldset>
-			<legend>Legend</legend>
+			<legend>Support the Tour</legend>
 	  <div class="form-row">
 	  	<div class="control-group">
               <label class="control-label">Name</label>
               <div class="controls">
                 <input type="text" size="20" name="name" value="<?=$this->name?>"/>
+              </div>
+            </div>
+	  	<div class="control-group">
+              <label class="control-label">Email</label>
+              <div class="controls">
+                <input type="text" size="20" name="name" value="<?=$this->email?>"/>
               </div>
             </div>
 	  	<div class="control-group">

@@ -80,7 +80,7 @@ $(function() {
                } 
             ?>    
         </div>
-                            <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Support The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?=$currentGoal->suggestedAmount?> Minimum Pledge</small></a></div>
+            <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href='/support/<?=$this->project->slug?>?goalUUID=<?=$currentGoal->uuid?>&amount=<?=$currentGoal->suggestedAmount?>&rewardUUID=0' class='btn btn-success btn-large requiresLogin'>Support The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?=$currentGoal->suggestedAmount?> Minimum Pledge</small></a></div>
         <div class='share well well-small'>
 <a class='btn btn-info' href="https://twitter.com/share?url=<?= urlencode('http://' . $_SERVER['SERVER_NAME'] .  '/projects/' . $this->project->slug) ?>
 &text=<?= urlencode($this->project->title . " (via @joinopenfire)") ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> <a class='btn btn-info' style='background: #596F90' href='https://www.facebook.com/dialog/feed?app_id=<?= FACEBOOK_APP_ID ?>&

@@ -44,13 +44,13 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
     <h3>Login</h3>
   </div>
   <div class="modal-body" style='text-align:center'>
-          <a class='btn btn-info' href='/auth/facebook' style='background: #596F90; margin-top: 0.5em; margin-bottom: 0.5em'><i class='icon-facebook'></i> Log In With Facebook</a> <a class='btn btn-info' href='/auth/twitter'><i class='icon-twitter'></i> Log In With Twitter</a>
-          <hr>
+          <?php /*<a class='btn btn-info' href='/auth/facebook' style='background: #596F90; margin-top: 0.5em; margin-bottom: 0.5em'><i class='icon-facebook'></i> Log In With Facebook</a> <a class='btn btn-info' href='/auth/twitter'><i class='icon-twitter'></i> Log In With Twitter</a>
+          <hr> */ ?>
   <form action='/login' method='post'>
     <p>If you already have an BandAid account, login below.</p>
       <input type='text' class='input-xlarge' name='login' placeholder='Login'><br>
       <input type='password' class='input-xlarge' name='password' placeholder='Password'><br>
-      <button class='btn' type='submit'>Login</button> or <a href='/signup' class='btn btn-info'>Signup</a><br>
+      <button class='btn' type='submit'>Login</button> or <a href='/signup' class='btn btn-info'>Signup</a> <br>
 
 
 

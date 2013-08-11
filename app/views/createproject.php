@@ -54,11 +54,13 @@ $(function() {
 			<textarea class='input-block-level' style='height: 12em' id='goalDescription' name='goalDescription' placeholder="60 words max" data-required='true' data-error-message='Your goal has to have a summary.' ></textarea>
 		</fieldset>
 		<fieldset>
-			<label for='targetAmount'><b>*</b> Tour Funding Goal</label><div class="input-prepend" style='display:inline'>
-  <span class="add-on">$</span>
-  <input class="input-xxl" id='targetAmount' name='targetAmount' type="text" placeholder="In US dollars"  data-required='true' data-error-message='Your goal has to have a funding target.'> 
-</div> 
+			<label for='targetAmount'><b>*</b> Tour Funding Goal</label>
+			<div class="input-prepend" style='display:inline'>
+                                <span class="add-on">$</span>
+                                <input class="input-xxl" id='targetAmount' name='targetAmount' type="text" placeholder="In US dollars" data-required="true" data-error-message='Your goal has to have a funding target.'> 
+                        </div>
 		</fieldset>
+		<br />
 		<fieldset>
 			<label for='targetMonth'><b>*</b> When is your tour over?</label>
 			<select id='targetMonth' name='targetMonth'>
@@ -77,6 +79,7 @@ $(function() {
 	</select> 
 		</fieldset>
 		<fieldset>
+		        <br />
 			<button type='submit' class='btn'>Submit Band And Tour For Approval</button>
 		</fieldset>
 	</form>

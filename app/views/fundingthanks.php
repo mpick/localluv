@@ -7,7 +7,7 @@
     <h4>Hey, why not share this with the whole wide world?</h4>
   	<div>
       <a class='btn btn-info' href="https://twitter.com/share?url=<?= urlencode('http://' . $_SERVER['SERVER_NAME'] .  '/goals/' . $this->goal->uuid) ?>
-  &text=<?= urlencode("I backed " . $this->goal->name . ': on @joinopenfire') ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> <a class='btn btn-info' style='background: #596F90' href='https://www.facebook.com/dialog/feed?app_id=<?= FACEBOOK_APP_ID ?>&
+  &text=<?= urlencode("I backed " . $this->goal->name . ': on @beabandaid') ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> <a class='btn btn-info' style='background: #596F90' href='https://www.facebook.com/dialog/feed?app_id=<?= FACEBOOK_APP_ID ?>&
     link=http://<?= $_SERVER['SERVER_NAME'] ?>/goals/<?= $this->goal->uuid ?>&
     picture=<?= $project->icon ?>&
     name=<? urlencode($this->goal->name) ?>&
@@ -20,12 +20,12 @@
       <span itemprop="name"><?= $this->goal->name ?></span>
   <span itemprop="description"><?= $this->goal->summary ?></span>
   <img itemprop="image" src="<?= $project->icon ?>">
-  <meta property="og:title" content="openfire: <?= $this->goal->name ?>" />
+  <meta property="og:title" content="beabandaid: <?= $this->goal->name ?>" />
   <meta property="og:image" content="<?= $project->icon ?>" />
   <meta property="og:description" content="<?= $this->goal->summary ?>" />
   </div>
   <br><br>
-  	<h4><a href='/goals/<?= $this->goal->uuid ?>'>Return to <b><?= $this->goal->name ?></b></a><br><br>
+  	<h4>
     <a href='/projects/<?= $project->slug ?>'>Return to <b><?= $project->title ?></b></a></h4>
 
   </div>

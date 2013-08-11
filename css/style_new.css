@@ -15,11 +15,15 @@
 .create-project li.custom-error-message {
         color: red;
         list-style:none;
+        font-size: 14px;
 }
 .create-project label{
         font-weight: 700;
         font-size: 1.25em;
         padding-top: 1em;
+}
+.create-project button {
+        margin-top: 20px; 
 }
 .navbar .nav li {
         padding-top: 5px;

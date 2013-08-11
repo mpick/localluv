@@ -44,12 +44,11 @@ ini_set('display_errors', '1');
         <a class='brand' href='/'><img src="/images/bandaid_logo.png" style="height:30px" /></a>
         <ul class="nav">
           <li class='dropdown'>
-            <a href="/projects">Explore Bands</a>
+            <a href="/projects">Find Bands</a>
           </li>
           <li class="divider-vertical"></li>
-          <li><a href="/createProject">Register Band</a></li>
+          <li><a href="/createProject">Register Your Band</a></li>
           <li class="divider-vertical"></li>
-          <li><a href="/about">About Us</a></li>
           </ul>
           <ul class='nav pull-right'>
           <li class="divider-vertical"></li>
@@ -62,9 +61,9 @@ ini_set('display_errors', '1');
           <li class="divider-vertical"></li> -->
 
     <? if(empty($user->id)): ?>
-
+            <li><a href="/about">About</a></li>
             <li class='dropdown'>
-             <a href="#loginModal" role="button" data-toggle="modal">Login/Signup</a>
+             <a href="#loginModal" role="button" data-toggle="modal">Login</a>
 
             </li>
 <? else: ?>

@@ -117,11 +117,11 @@ console.log(data.action);
 			<fieldset>
 				<label for='targetAmount'>Funding Target</label>
 				<div class="input-prepend">
-		  <span class="add-on">$</span>
-		  <input class="input-xlarge" name='targetAmount' type="text" placeholder="In US dollars" value='<?= $this->goal->targetAmount ?>' data-required='true' data-error-message='Your goal must have a funding target.'>
-		</div>
+		                  <span class="add-on">$</span>
+		                  <input class="input-xlarge" name='targetAmount' type="text" placeholder="In US dollars" value='<?= $this->goal->targetAmount ?>' data-required='true' data-error-message='Your goal must have a funding target.'>
+		                </div>
 			</fieldset>
-		<fieldset>
+		        <fieldset>
 					<label for='targetMonth'>Target Completion Date For Goal</label>
 					<select name='targetMonth'>
 					<? for($i = 1; $i < 13; $i++): ?>
@@ -141,9 +141,11 @@ console.log(data.action);
 				<br>
 				<fieldset>
 					<label for='targetType'>Goal Type</label>
-					<div class='well well-small'><input type='radio' name='targetType' value='complete' checked='checked'> <b>Complete:</b> this goal must reach its target amount by its completion date, or your project will not receive any of the funds raised.
+					<div class='well well-small'>
+					        <input type='radio' name='targetType' value='complete' checked='checked'> <b>Complete:</b> this goal must reach its target amount by its completion date, or your project will not receive any of the funds raised.
 					</div>
-					<div class='well well-small muted'><input type='radio' name='targetType' value='partial' disabled='disabled'> <b>Partial:</b> your project will receive all of the funds raised for this goal whether you reach your target amount by the completion date or not.
+					<div class='well well-small muted'>
+					        <input type='radio' name='targetType' value='partial' disabled='disabled'> <b>Partial:</b> your project will receive all of the funds raised for this goal whether you reach your target amount by the completion date or not.
 					</div>
 				</fieldset>
 

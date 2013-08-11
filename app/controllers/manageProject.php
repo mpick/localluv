@@ -55,7 +55,7 @@ global $dbh;
 	$uuid = $_POST['uuid'];
 	if(!empty($_POST['title'])) $title = $_POST['title'];
 $subtitle = $_POST['subtitle'];
-$description = $_POST['description'];
+//$description = $_POST['description'];
 $summary = $_POST['summary'];
 
 $mediaEmbed = $_POST['mediaEmbed'];
