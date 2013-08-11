@@ -83,19 +83,17 @@ $(function() {
             <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href='/support/<?=$this->project->slug?>?goalUUID=<?=$currentGoal->uuid?>&amount=<?=$currentGoal->suggestedAmount?>&rewardUUID=0' class='btn btn-success btn-large requiresLogin'>Support The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?=$currentGoal->suggestedAmount?> Minimum Pledge</small></a></div>
         <div class='share well well-small'>
 <a class='btn btn-info' href="https://twitter.com/share?url=<?= urlencode('http://' . $_SERVER['SERVER_NAME'] .  '/projects/' . $this->project->slug) ?>
-&text=<?= urlencode($this->project->title . " (via @joinopenfire)") ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> <a class='btn btn-info' style='background: #596F90' href='https://www.facebook.com/dialog/feed?app_id=<?= FACEBOOK_APP_ID ?>&
-  link=http://<?= $_SERVER['SERVER_NAME'] ?>/projects/<?= $this->project->slug ?>&
-  picture=<?= $this->project->icon ?>&
-  name=<? urlencode($this->project->title) ?>&
-  caption=<?= urlencode($this->project->subtitle) ?>&
-  description=<?= urlencode($this->project->summary) ?>&
-  redirect_uri=http://<?= $_SERVER['SERVER_NAME'] ?>/projects/<?= $this->project->slug ?>' target='_blank'><i class='icon-facebook'></i> Share on Facebook</a> 
+&text=<?= urlencode($this->project->title . " (via @beabandaid)") ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> 
+
+<a class='btn btn-info' style='background: #596F90' href="https://www.facebook.com/sharer/sharer.php?u=http://<?=urlencode($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'])?>" target='_blank'>
+
+  <i class='icon-facebook'></i> Share on Facebook</a> 
 <a class='btn' target='_blank' href='https://plus.google.com/share?url=http://<?= $_SERVER['SERVER_NAME'] ?>/projects/<?= $this->project->slug ?>'><i class='icon-googleplus'  style='color: #d34836'></i> Share on Google+</a>
 <div style='display:none'>
     <span itemprop="name"><?= $this->project->title ?></span>
 <span itemprop="description"><?= $this->project->summary ?></span>
 <img itemprop="image" src="<?= $this->project->icon ?>">
-<meta property="og:title" content="openfire: <?= $this->project->title ?>" />
+<meta property="og:title" content="beabandaid: <?= $this->project->title ?>" />
 <meta property="og:image" content="<?= $this->project->icon ?>" />
 <meta property="og:description" content="<?= $this->project->summary ?>" />
 </div>
@@ -111,7 +109,6 @@ $(function() {
 
 
                 <div class='summary'>
-
                <span class='muted'>Band Description:</span> <?= nl2br($this->project->summary) ?>
             </div>
 
@@ -237,7 +234,7 @@ $(function() {
   </div>
   <div class="modal-body">
     <h4>What's the difference between a project and a goal?</h4>
-    <p>An openfire <b>project</b> is the overall, long-term, overarching list of things that a project creator or team is trying to achieve. A <b>goal</b> is one step within the project: a specific actionable thing.</p>
+    <p>A BandAid <b>project</b> is the overall, long-term, overarching list of things that a project creator or team is trying to achieve. A <b>goal</b> is one step within the project: a specific actionable thing.</p>
     <p>You can think of the project as a to-do list, and each goal is an item on that to-do list, which is accomplished when it's funded by people like you.</p>
   </div>
 </div>

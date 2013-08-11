@@ -89,8 +89,8 @@ $('.tooltipped').tooltip();
                         else {
                         ?>
                                 <div class='well well-small'>
-                                        <h3>You've created your profile on BandAid!</h3>
-                                        <a href='/createProject' class='btn text-align-center'> Register Your Band</a>
+                                        <h3>You've created your Band on BandAid!</h3>
+                                        <a href='/band/create' class='btn text-align-center'> Register Your Band</a>
                                         <br />
                                 </div>
                         <?php } ?>

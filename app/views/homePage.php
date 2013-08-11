@@ -19,7 +19,7 @@
               <br />
               
             </h1>
-            <p style='color:#fff; margin-left:-210px;margin-top:-10px;'> Bacon ipsum dolor sit amet ground round ribeye biltong ham hock short loin. Sirloin pork chop short ribs tri-tip tongue, flank andouille strip steak hamburger shoulder short loin drumstick ball tip. </p>
+            <p style='color:#fff; margin-left:-210px;margin-top:-10px;text-align:center;'>Help bands tour.  Bands personally connect to you. <br /> Bands win. Fans win. Music wins.</p>
           </div>
         </div>
           </div>

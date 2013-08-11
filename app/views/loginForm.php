@@ -6,6 +6,7 @@
 	<form action='/login' method='post'>
   		<input type='text' class='input-xlarge' name='login' placeholder='Login'><br>
   		<input type='password' class='input-xlarge' name='password' placeholder='Password'><br>
+  		<br />
   		<button class='btn' type='submit'>Login</button> or <a href='/signup' class='btn btn-info'>Signup</a> <br>
 
 

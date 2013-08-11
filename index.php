@@ -63,6 +63,7 @@ Toro::serve(array(
     "goals/:alpha" => "Goals",
     "goals/:alpha/fund" => "Fund",
     "createProject" => "createProject",
+    "band/:alpha" => "createProject",
     "finishProject/:alpha" => "finishProject",
     "finishProject/:alpha/finishGoal" => "finishGoal",
     "manageProject/:alpha" => "manageProject",

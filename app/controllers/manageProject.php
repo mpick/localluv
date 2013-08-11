@@ -54,7 +54,7 @@ global $dbh;
 
 	$uuid = $_POST['uuid'];
 	if(!empty($_POST['title'])) $title = $_POST['title'];
-$subtitle = $_POST['subtitle'];
+//$subtitle = $_POST['subtitle'];
 //$description = $_POST['description'];
 $summary = $_POST['summary'];
 
@@ -72,8 +72,8 @@ $result = $sth->fetch(PDO::FETCH_ASSOC);
 //if(count($result) == 0) $error = "Sorry, you do not have admin privileges for this project.";
 
 $params = array(
-	"subtitle" => $subtitle,
-	"description" => $description,
+	//"subtitle" => $subtitle,
+	//"description" => $description,
 	"summary" => $summary,
 	"lastUpdated" => time(),
 	"mediaEmbed" => $mediaEmbed

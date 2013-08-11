@@ -20,7 +20,7 @@
         $this->creator = new User($this->creatorID);
 //var_dump($this->uuid);
 //var_dump( glob($_SERVER['DOCUMENT_ROOT'] . "/images/projects/" . $this->uuid . ".*"));
-       $imgFile = glob($_SERVER['DOCUMENT_ROOT'] . "/images/projects/" . $this->uuid . ".*");
+       $imgFile = glob($_SERVER['DOCUMENT_ROOT'] . "/images/projects/" . $this->uuid . ".png");
        
        //if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/../images/projects/" . $this->uuid . ".png")){
         if ( !empty($imgFile) && $imgFile[0] != '' ) {

@@ -18,9 +18,9 @@
   </div>
 
 
-<div id="getsat-widget-4965"></div>
-<script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
-<!--<script type="text/javascript">
+<!--<div id="getsat-widget-4965"></div>
+<!--<script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
+<script type="text/javascript">
 if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-widget-4965"}); }
 
   $(function() {
@@ -38,6 +38,26 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
   });
 
 </script>-->
+
+<!-- UserVoice JavaScript SDK (only needed once on a page) -->
+<script>(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/fWT3Ps0BIBWaVJJFEVyuQ.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})()</script>
+
+<!-- A tab to launch the Classic Widget -->
+<script>
+        UserVoice = window.UserVoice || [];
+        UserVoice.push(['showTab', 'classic_widget', {
+          mode: 'full',
+          primary_color: '#cc6d00',
+          link_color: '#007dbf',
+          default_mode: 'support',
+          forum_id: 218421,
+          tab_label: 'Feedback & Support',
+          tab_color: '#cc6d00',
+          tab_position: 'middle-right',
+          tab_inverted: false
+        }]);
+</script>
+
 <div id='loginModal' class="modal hide fade">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -50,6 +70,7 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
     <p>If you already have an BandAid account, login below.</p>
       <input type='text' class='input-xlarge' name='login' placeholder='Login'><br>
       <input type='password' class='input-xlarge' name='password' placeholder='Password'><br>
+      <br />
       <button class='btn' type='submit'>Login</button> or <a href='/signup' class='btn btn-info'>Signup</a> <br>
 
 
