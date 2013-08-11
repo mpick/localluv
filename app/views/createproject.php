@@ -96,7 +96,7 @@ $(function() {
 		<p>If we reject it, it doesn't mean we don't think your idea is great; it just means we don't think it's a fit for openfire. Don't be discouraged!</p>
 	</li>
 		<li><p><b>Think hard about your initial goal.</b> During our approval process, we look carefully at a project's initial goal. What we want to see is a <b>concrete, achievable goal with a reasonable financial target amount</b>.</p><p>"Change the world" is an example of a bad initial goal; a better example might be "Complete initial prototype of hardware" or "Complete feasibility study".</p></li>
-	<li><p><b>Once we approve your project</b>, you'll be able to add a project icon, media, a more detailed description, and existing team members. You'll also be able to add more information about your initial goal. You'll also be required to set up a <a href='http://www.wepay.com' target='_new'>WePay</a> account for your project, so we can get your money to you when and if you meet your goal.</p></li>
+	<li><p><b>Once we approve your project</b>, you'll be able to add a project icon, media, a more detailed description, and existing team members. You'll also be able to add more information about your initial goal. You'll also be required to set up a <a href='http://www.stripe.com' target='_new'>Stripe</a> account for your project, so we can get your money to you when and if you meet your goal.</p></li>
 	<li><p><b>When you're approved and ready to roll</b>, you can set your project to be published. Once a project is published, it can't be unpublished...so be sure you've got everything you need to get rolling!</p></li>
 	<li><p><b>If you have any questions,</b> feel free to <a href='/contact'>contact us</a> and ask them!</p></li>
 

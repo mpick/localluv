@@ -56,8 +56,8 @@
 
 
 <div class='span4 sidebar fundGoal goal'>
-<h2>Fund This Goal</h2>
-<p style='text-align:center'><small><a href="#faq_goal" role="button" data-toggle="modal"><i class='icon-question-sign help-icon'></i> What's the difference between a project and a goal?</a></small></p>
+<h2>Fund This Tour</h2>
+<!--<p style='text-align:center'><small><a href="#faq_goal" role="button" data-toggle="modal"><i class='icon-question-sign help-icon'></i> What's the difference between a project and a goal?</a></small></p>-->
     <div class='well well-small'>
 <div class="progress small">
   <div class="bar bar-success" style="width: <?= $this->goal->percentComplete ?>%;"></div>
@@ -103,7 +103,7 @@
 
 </div>
 <div>
-<p><small>BandAid's payments are processed by <a href='http://www.wepay.com'>WePay</a>, and we never see or retain your credit card information. Your card will be immediately charged upon submission of payment.</small></p>
+<p><small>BandAid's payments are processed by <a href='http://www.stripe.com'>Stripe</a>, and we never see or retain your credit card information. Your card will be immediately charged upon submission of payment.</small></p>
 </div>
 </div>
 <div id="faq_goal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

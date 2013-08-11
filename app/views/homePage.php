@@ -10,7 +10,7 @@
           <div class='span10'>
             <h1>
               <strong>
-                Support the goal. Experience the journey.
+                Support the Tour. Experience the journey.
               </strong>
               <br />
               
@@ -62,10 +62,9 @@
       <? endforeach; ?>
     </ul>
       </div>-->
-
       <div class="featuredGoals">
         <h2>
-            Featured Goals
+            Featured Tours
         </h2>
         <ul class='thumbnails'>
         <? foreach($this->featuredGoals as $goal): $project = new Project($goal->projectID) ?>

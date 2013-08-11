@@ -28,7 +28,7 @@ $(function() {
                 <h3 class='subtitle'><?= $this->project->subtitle ?></h3>
              </div>
         <div class='goalChart span12'>
-            <h4>Goals<br><small class='muted'>Click a goal's name for details</small></h4>
+            <h4>Goals<br><small class='muted'>Click a tour's name for details</small></h4>
 
             <table class='chart table table-bordered'>
                 <tbody>
@@ -80,7 +80,7 @@ $(function() {
                } 
             ?>    
         </div>
-                            <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Support The Band's Current Goal<br><span style='font-size: 0.75em; font-weight: 300'>$<?= $currentGoal->suggestedAmount ?> Minimum Pledge</small></a></div>
+                            <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Support The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?= $currentGoal->suggestedAmount ?> Minimum Pledge</small></a></div>
         <div class='share well well-small'>
 <a class='btn btn-info' href="https://twitter.com/share?url=<?= urlencode('http://' . $_SERVER['SERVER_NAME'] .  '/projects/' . $this->project->slug) ?>
 &text=<?= urlencode($this->project->title . " (via @joinopenfire)") ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> <a class='btn btn-info' style='background: #596F90' href='https://www.facebook.com/dialog/feed?app_id=<?= FACEBOOK_APP_ID ?>&
@@ -174,7 +174,7 @@ $(function() {
 </div>
     </div>
 <div class='span4 goal sidebar'>
- <h3>Support The Band's Current Goal</h3>
+ <h3>Support The Band's Current Tour</h3>
 <!--<p style='text-align:center'><small><a href="#faq_goal" role="button" data-toggle="modal"><i class='icon-question-sign help-icon'></i> What's the difference between a project and a goal?</a></small></p>-->
     <div class='well well-small'>
         <h3><a href='/goals/<?= $currentGoal->uuid ?>'><?= $currentGoal->name ?></a></h3>
@@ -205,7 +205,7 @@ $(function() {
 <br>
 </fieldset>
 <fieldset>
-<h3>Goal Perks</h3>
+<h3>Tour Perks</h3>
 <fieldset>
     <label class='radio reward'><input type='radio' name='rewardUUID' value='0' checked='checked'> <h4><b>No Reward</b></h4></label>
     <hr>
@@ -223,7 +223,7 @@ $(function() {
 
 </div>
 <div>
-<p><small>BandAid’s payments are processed by <a href='http://www.wepay.com'>WePay</a>, and we never see or retain your credit card information. Your card will be immediately charged upon submission of payment.</small></p>
+<p><small>BandAid’s payments are processed by <a href='http://www.stripe.com'>Stripe</a>, and we never see or retain your credit card information. Your card will be immediately charged upon submission of payment.</small></p>
 </div>
 </div>
 <div id="faq_goal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

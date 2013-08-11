@@ -42,10 +42,10 @@ ini_set('display_errors', '1');
         <a class='brand' href='/'><img src="/images/bandaid_logo.png" style="height:30px" /></a>
         <ul class="nav">
           <li class='dropdown'>
-            <a href="/projects">Explore Goals</a>
+            <a href="/projects">Explore Tours</a>
           </li>
           <li class="divider-vertical"></li>
-          <li><a href="/create">Create Goal</a></li>
+          <li><a href="/create">Create Tour</a></li>
           <li class="divider-vertical"></li>
           <li><a href="/about">About Us</a></li>
           </ul>
