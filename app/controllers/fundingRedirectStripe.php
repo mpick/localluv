@@ -38,9 +38,9 @@
 			$amount = $_POST['amount'] * 100; // using amounts as pennies
 			require_once("/var/www/live/app/libraries/Stripe.php");
 			//Production key
-			//Stripe::setApiKey('sk_live_60HJUnfkWIr20wxDntt8P1kk');
+			Stripe::setApiKey('sk_live_60HJUnfkWIr20wxDntt8P1kk');
 			//Testing Key
-			Stripe::setApiKey('sk_test_6rQeOqjtoqvDMCFdQyGYrK0b');
+			//Stripe::setApiKey('sk_test_6rQeOqjtoqvDMCFdQyGYrK0b');
 			$myCard = array('number' => $_POST['cardnumber'], 'exp_month' =>  $_POST['exp-month'], 'exp_year' =>   $_POST['exp-year']);
 			$charge = Stripe_Charge::create(array('card' => $myCard, 'amount' => $amount, 'currency' => 'usd', 'description' => $email));
 			/*
