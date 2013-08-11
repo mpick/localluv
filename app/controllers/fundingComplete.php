@@ -38,9 +38,13 @@ function get($goalUUID, $userUUID, $rewardUUID, $amount){
 	$email->send();
 	//send to buying user
 	$email = new emailMessage();
-	$email->to = $user->email;
+	$email->to = $user->email; 
+	"Thank you for supporting the tour!  Your $$$ helped [Band] fill their tank and fill their stomachs!  (If Perk) Hang tight to hear how you'll redeem your sweet Perk."
+
+
+
 	$email->subject = "BandAid Donation Successful!";
-	$email->body = "Thank you for supporting the tour! " . $project->title . " is a tad bit more comfortable because of you! " . ($rewardUUID ? 'You will be contacted shortly with instructions to reddem your perk.' : '');
+	$email->body = "Thank you for supporting the tour!  Your $$$ helped " . $project->title . " fill their tank and fill their stomachs! " . ($rewardUUID ? 'Hang tight to hear how you\'ll redeem your sweet Perk.' : '');
 	$email->send();
 
 	$backer = new Backer();

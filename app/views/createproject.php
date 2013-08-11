@@ -38,8 +38,8 @@ $(function() {
 			<label for='summary'><b>*</b> Band Description</label><textarea class='input-block-level' style='height: 12em' id='summary' name='summary' placeholder="60 words max" data-required='true' data-error-message='Your band has to have a description.' ></textarea>
 		</fieldset>
 		<hr>
-			<div class="alert alert-danger">
-				[put copy here]
+			<div class="alert alert-error" style="text-align:center">
+				We require an approval process for your tour outline to ensure the credibility of our platform for fans. If we feel your costs are unjustified, we will reach out for clarification before approving.
 			</div>
 		<fieldset>
 			<legend>Your Tour</legend>

@@ -1,6 +1,9 @@
 <style>
 .inspiration p{margin-bottom: 1em;}
 </style>
+<div class="span12">
+        <span class="offset4"><img src="/images/bandaid_logo.png" style="height:150px; text-align:center;" /></span>
+</div>
 <div class='span12'>
 	<div class='span8 inspiration offset2' style='margin-top: 2em; font-size: 1.5em; line-height: 1.25em'>
 

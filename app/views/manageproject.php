@@ -118,7 +118,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 	</ul>
 			<ul class='nav nav-pills nav-stacked'>
 		<!-- <li class='active'><a href='#messages' data-toggle='tab'>Messages</a> -->
-		<li class='active'><a href='#overview' data-toggle=tab>Project Overview</a>
+		<li class='active'><a href='#overview' data-toggle=tab>Band Overview</a>
 		<li><a href='#goals' data-toggle=tab>Tours</a>
 		<!--<li><a href='#team' data-toggle=tab>Team</a>-->
 		<li><a href='#updates' data-toggle=tab>Updates <? if(count($this->project->updates > 0)): ?>(<?= count($this->project->updates) ?>)<? endif; ?></a>
@@ -189,7 +189,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 		<legend>Tours</legend>
 		<? foreach($this->project->goals as $goal): ?>
 		<div class='goal well well-small'>
-			<div><h3 class='pull-left'><?= $goal->name ?> <? if($goal->isCurrent == 1): ?><span class='label label-info'>current</span><? endif; ?></h3><a href='/projects/<?php echo $this->project->slug; ?>' class='btn pull-right'><i class='icon-eye-open'></i> View Tour</a><div class='clearfix'></div><a href='/manageGoal/<?= $goal->uuid ?>' class='btn pull-right'><i class='icon-eye-open'></i> Manage Tour Perks</a><div class='clearfix'></div></div>
+			<div><h3 class='pull-left'><a href='/manageGoal/<?= $goal->uuid ?>'><?= $goal->name ?></a> <? if($goal->isCurrent == 1): ?><span class='label label-info'>current</span><? endif; ?></h3><a href='/projects/<?php echo $this->project->slug; ?>' class='btn pull-right'><i class='icon-eye-open'></i> View Tour</a><div class='clearfix'></div><a href='/manageGoal/<?= $goal->uuid ?>' class='btn pull-right'><i class='icon-eye-open'></i> Manage Tour Perks</a><div class='clearfix'></div></div>
 			<div><?= trimtopcount($goal->description, 2) ?></div>
 			<h5>Status: <?= ucwords($goal->status) ?></h5>
  			<h5>Funds: <b>$<?= number_format($goal->currentAmount, 2) ?></b> of <b>$<?= number_format($goal->targetAmount, 2) ?></b> raised from <b><?= count($goal->backers) ?></b> backers</h5>

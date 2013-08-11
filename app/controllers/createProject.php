@@ -105,6 +105,12 @@ function post(){
 
 addActivity("$user->fullname ($user->email) created a project, &quot;$project->title&quot;");
 
+	//Alert User
+	/*$email = new emailMessage();
+	$email->to = $user->email;
+	$email->subject = "New Band Created " . slugify($goalTitle);
+	$email->body = "A new band has been created.  Time to go check it out." ;
+	$email->send();*/
 	//Alert Admins
 	$email = new emailMessage();
 	$email->to = 'admin@beabandaid.co';

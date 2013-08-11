@@ -44,10 +44,10 @@ ini_set('display_errors', '1');
         <a class='brand' href='/'><img src="/images/bandaid_logo.png" style="height:30px" /></a>
         <ul class="nav">
           <li class='dropdown'>
-            <a href="/bands">Find Bands</a>
+            <a href="/bands">Explore Bands</a>
           </li>
           <li class="divider-vertical"></li>
-          <li><a href="/band/create">Register Your Band</a></li>
+          <li><a href="/band/register">Register Your Band</a></li>
           <li class="divider-vertical"></li>
           </ul>
           <ul class='nav pull-right'>

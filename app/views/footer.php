@@ -68,7 +68,7 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
           <hr> */ ?>
   <form action='/login' method='post'>
     <p>If you already have an BandAid account, login below.</p>
-      <input type='text' class='input-xlarge' name='login' placeholder='Login'><br>
+      <input type='email' class='input-xlarge' name='login' placeholder='my@email.com' required><br>
       <input type='password' class='input-xlarge' name='password' placeholder='Password'><br>
       <br />
       <button class='btn' type='submit'>Login</button> or <a href='/signup' class='btn btn-info'>Signup</a> <br>

@@ -127,12 +127,12 @@ $(function() {
             <? foreach($this->project->updates as $update): ?>
             <li class='update<? if($update->public == 0): ?> private muted<? endif ?>'>
                 <h4><a href='/updates/<?= $update->uuid ?>'><?= $update->title ?></a></h4>
-                <div class='meta'>Posted by <a href='/users/<?=$update->user->username ?>'><?= $update->user->username ?></a> on <?= date("F jS, Y", $update->dateAdded) ?> at <?= date("h:ia", $update->dateAdded) ?></div>
+                <?php /*<div class='meta'>Posted by <a href='/users/<?=$update->user->username ?>'><?= $update->user->username ?></a> on <?= date("F jS, Y", $update->dateAdded) ?> at <?= date("h:ia", $update->dateAdded) ?></div> */ ?>
                 <div class='body'>
                     <? if($update->public == 1): ?>
                     <?= trimtopcount($update->body, 2) ?> <a href='/updates/<?= $update->uuid ?>'>(See more)</a></p>
                     <? else: ?>
-                    <i>This is a private update for project team members and backers only.</i>
+                    <i>This is a private update for band team members and backers only.</i>
                 <? endif; ?>
                 </div>
             </li>

@@ -9,7 +9,7 @@
           <div class="span10 splash offset1" style="background-color: rgba(0, 0, 0, 0);">
            <div class='row-fluid' style="background-color: rgba(0, 0, 0, 0); ">
             <div class='span2 offset2' style="background-color: rgba(0, 0, 0, 0);margin-top:50px;">
-            <img width="200" src="img/bandaid_logo_white.png">
+            <img width="200" src="img/bandaid_logo.png">
           </div>
           <div class='span7' style="background-color: rgba(0, 0, 0, 0);text-shadow: 2px 2px #2d2d2d; margin-top:25px;">
             <h1 style="color:#ffffff;">
@@ -91,7 +91,7 @@ ini_set('display_errors', '1');
                 <div class="gprogress" style="width:<?= $goal->percentComplete ?>%"></div>
             </div>
             <h3>
-                <a title="<?= $goal->name ?>" href="/projects/<?= $project->slug ?>"><?= $goal->name ?></a>
+                <a title="<?= $goal->name ?>" href="/projects/<?= $project->slug ?>"><?= $project->title ?></a>&nbsp;<span style="font-size:0.65em">(<?php echo $goal->name ?>)</span>
             </h3>
              
             <div class="summary">

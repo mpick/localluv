@@ -103,7 +103,7 @@ console.log(data.action);
 			</fieldset>
 			<fieldset>
 				<label for='mediaEmbed'>Video URL</label>
-				<input type='text' class='input-xxlarge' name='mediaEmbed' placeholder='e.g. http://www.youtube.com/watch?v=oHg5SJYRHA0' value='<?= $this->goal->mediaEmbed ?>' data-required='true' data-error-message='Your goal must have a video.'>
+				<input type='text' class='input-xxlarge' name='mediaEmbed' placeholder='e.g. http://www.youtube.com/watch?v=oHg5SJYRHA0' value='<?= $this->goal->mediaEmbed ?>' data-required='true' data-error-message='Your goal must have a video.' required>
 			</fieldset>
 			<fieldset>
 				<label for='summary'>Summary</label>
@@ -141,11 +141,11 @@ console.log(data.action);
 				<br>
 				<fieldset>
 					<label for='targetType'>Goal Type</label>
-					<div class='well well-small'>
-					        <input type='radio' name='targetType' value='complete' checked='checked'> <b>Complete:</b> this goal must reach its target amount by its completion date, or your project will not receive any of the funds raised.
-					</div>
 					<div class='well well-small muted'>
-					        <input type='radio' name='targetType' value='partial' disabled='disabled'> <b>Partial:</b> your project will receive all of the funds raised for this goal whether you reach your target amount by the completion date or not.
+					        <input type='radio' name='targetType' value='complete'  disabled='disabled'> <b>Complete:</b> this goal must reach its target amount by its completion date, or your project will not receive any of the funds raised.
+					</div>
+					<div class='well well-small '>
+					        <input type='radio' name='targetType' value='partial' checked='checked'> <b>Partial:</b> your project will receive all of the funds raised for this goal whether you reach your target amount by the completion date or not.
 					</div>
 				</fieldset>
 
