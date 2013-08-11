@@ -287,7 +287,7 @@ msgstr "Marquer ce commit"
 
 #: gitk:2370
 msgid "Return to mark"
-msgstr "Retourner à la marque"
+msgstr "Regoalner à la marque"
 
 #: gitk:2371
 msgid "Find descendant of this and mark"

@@ -10,7 +10,7 @@
           <div class='span10'>
             <h1>
               <strong>
-                Support the tour. Join the journey.
+                Support the goal. Experience the journey.
               </strong>
               <br />
               
@@ -25,7 +25,7 @@
     <div class="row-fluid max1000">
       
       
-      <div class="featuredProjects">
+      <!--<div class="featuredProjects">
         <h2>
           Featured Projects
         </h2>
@@ -33,7 +33,7 @@
         <? foreach($this->featuredProjects as $project): ?>
         <li class="project span4">
              <div class="media" style='text-align:center'>
-                    <a title="<?= $project->title ?>" href="/projects/<?= $project->slug ?>"><img src='<?= $project->icon ?>' style='width: 50%;'></a>
+                    <a title="<?= $project->title ?>" href="/projects/<?= $project->slug ?>"><img src='<?= $project->icon ?>' style='width: 100%;'></a>
             </div>
           <h3>
             <a title="<?= $project->title ?>" href="/projects/<?= $project->slug ?>">
@@ -61,17 +61,18 @@
         </li>
       <? endforeach; ?>
     </ul>
-      </div>
+      </div>-->
 
       <div class="featuredGoals">
         <h2>
-            Featured Project Goals
+            Featured Goals
         </h2>
         <ul class='thumbnails'>
         <? foreach($this->featuredGoals as $goal): $project = new Project($goal->projectID) ?>
         <li class="goal span4">
             <div class="media">
-                     <? if(!empty($goal->mediaEmbed)){ if(empty($this->mediaWidth)) $this->mediaWidth = 280; $objs = $embedly->oembed(array('url' => $goal->mediaEmbed, 'maxwidth' => $this->mediaWidth)); if(!empty($objs[0]->html)) echo $objs[0]->html; } ?>      
+                     <? //if(!empty($goal->mediaEmbed)){ if(empty($this->mediaWidth)) $this->mediaWidth = 280; $objs = $embedly->oembed(array('url' => $goal->mediaEmbed, 'maxwidth' => $this->mediaWidth)); if(!empty($objs[0]->html)) echo $objs[0]->html; } ?>      
+                     <a title="<?= $project->title ?>" href="/projects/<?= $project->slug ?>"><img src='<?= $project->icon ?>' style='width: 100%;'></a>
             </div>
             <div class="goal-progress" title="<?= $goal->percentComplete ?>% funded">
                 <div class="gprogress" style="width:<?= $goal->percentComplete ?>%"></div>
@@ -83,9 +84,9 @@
             <div class="summary">
             <?= nl2br($goal->summary) ?>
             </div>
-            <div class="project-info">
+            <!--<div class="project-info">
                 <img src="<?= $project->icon ?>" height="50" width="50" /> <a href="/projects/<?= $project->slug ?>"><?= $project->title ?></a>
-            </div>
+            </div>-->
         </li>
       <? endforeach; ?>
     </ul>

@@ -1984,7 +1984,7 @@ msgstr "Outil de fusion '%s' non supporté"
 
 #: lib/mergetool.tcl:303
 msgid "Merge tool is already running, terminate it?"
-msgstr "L'outil de fusion tourne déjà, faut-il le terminer ?"
+msgstr "L'outil de fusion goalne déjà, faut-il le terminer ?"
 
 #: lib/mergetool.tcl:323
 #, tcl-format

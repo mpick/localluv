@@ -29,6 +29,8 @@ $template->project = $project;
 
 $template->goal = $goal;
 $template->publish();
+$template->load('stripform');
+$template->publish();
 
 $template->load('footer');
 $template->publish();

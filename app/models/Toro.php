@@ -51,7 +51,7 @@ class Toro
                 ToroHook::fire('after_handler');
             }
             else {
-                ToroHook::fire('404');
+                //ToroHook::fire('404');
             }
         }
         else {
