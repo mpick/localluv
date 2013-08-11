@@ -41,12 +41,10 @@
 </div>
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript">
-console.log('hi');
-jQuery(document).ready(function() {
-	  // This identifies your website in the createToken call below
 	  Stripe.setPublishableKey('pk_test_5zburddCuXacBwyAHH3hliH5');
 		jQuery(function($) {
 		  $('#payment-form').submit(function(event) {
+		  	alert("1");
 		    var $form = $(this);
 		    console.log($form);
 		    // Disable the submit button to prevent repeated clicks
@@ -76,5 +74,4 @@ jQuery(document).ready(function() {
 	    $form.get(0).submit();
 	  }
 	};	
-});
 </script>

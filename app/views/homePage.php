@@ -35,6 +35,7 @@ ini_set('display_errors', '1');
     <div class="row-fluid max1000">
       
       
+      <?php /*
       <div class="featuredProjects">
         <h2>
           Featured Projects
@@ -71,7 +72,8 @@ ini_set('display_errors', '1');
         </li>
       <? endforeach; ?>
     </ul>
-      </div>-->
+      </div>
+      */ ?>
 
       <div class="featuredGoals">
         <h2>

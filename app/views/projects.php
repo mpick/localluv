@@ -1,6 +1,6 @@
 <? global $user; global $embedly; $partials = new Templater(); ?>
 <div class='span8'>
-<h2>Projects</h2>
+<h2>Bands</h2>
 	<? foreach($this->projects as $project): if($project->status == 'published'): ?>
 	<div class='well well-small'>
 	<div class='row-fluid'>
@@ -17,7 +17,7 @@
 <? endif; endforeach; ?>
 </div>
 <div class='span4'>
-	<h3>Categories</h3>
+	<h3>Genre</h3>
 <ul>
 <? foreach($this->categories as $category): ?>
 	<li><a href='/projects/categories/<?= $category->slug ?>'><?= $category->name ?> (<?= $category->numProjects ?>)</a></li>

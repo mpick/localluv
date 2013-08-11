@@ -2,7 +2,7 @@
 <div class='container-fluid'>
   <footer class='navbar'>
     <div class='navbar-inner'>
-      <a class='brand'><img src='/img/logo.png' style='height:1em'></a>
+      <!--<a class='brand'><img src='/img/logo.png' style='height:1em'></a>-->
       <ul class='nav'>
         <li><a href='#'>Privacy Policy</a></li>
         <!--<li><a href='#'>Team</a></li>-->
@@ -20,7 +20,7 @@
 
 <div id="getsat-widget-4965"></div>
 <script type="text/javascript" src="https://loader.engage.gsfn.us/loader.js"></script>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-widget-4965"}); }
 
   $(function() {
@@ -37,7 +37,7 @@ if (typeof GSFN !== "undefined") { GSFN.loadWidget(4965,{"containerId":"getsat-w
     });
   });
 
-</script>
+</script>-->
 <div id='loginModal' class="modal hide fade">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

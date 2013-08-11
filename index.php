@@ -42,6 +42,7 @@ Toro::serve(array(
     "/authCallback" => "authCallback",
     "/completeProfile" => "completeProfile",
     "about" => "About",
+    "payment" => "Payment",
     "create" => "Create",
     "privacy" => "Privacy",
     "team" => "Team",
