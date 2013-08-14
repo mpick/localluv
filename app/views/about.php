@@ -2,6 +2,8 @@
 .inspiration p{margin-bottom: 1em;}
 </style>
 <div class="container">
+        <div class="col-lg-4 col-lg-offset-4"><img src="/images/bandaid_logo.png" style="height:150px; text-align:center; margin-bottom: 50px;" /></div>
+</div>
 <div class='col-lg-12'>
 	<div class='col-lg-8 col-lg-offset-2' style="font-size: 1.5em; ">
 

@@ -15,7 +15,7 @@
 
 	<p>Quit staring at that cubicle wall. It's not going to go away until you're ready to make a change.</p>
 
-	<p style='font-size: 1.5em; text-align:center'><a href='/createProject'>Are you ready?</a></p>
+	<p style='font-size: 1.5em; text-align:center'><a href='/band/create'>Are you ready?</a></p>
 
 
 </div>

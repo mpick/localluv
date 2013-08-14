@@ -16,7 +16,7 @@ $params = array(
 	);
 $user->update($params);
 
-$msg = "Thanks! Your account is now confirmed, and you can <a href='/login'>login</a>.";
+$msg = "<div class=\"alert-success\" style=\"text-align:center\"><br/><br /><h2 style=\"text-align:center;\">Thanks! Your account is confirmed.</h2><br /><br /><a href='/createProject' class='btn text-align-center'>Register Your Band</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='/bands' class='btn text-align-center'>Explore Tours</a><br/><br /></div>";
 
 
 }else{

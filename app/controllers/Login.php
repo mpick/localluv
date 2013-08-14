@@ -84,7 +84,7 @@ else{
 ;
 }		
 			//var_dump($_SERVER);
-			$return = 'http://' . $_SERVER['HTTP_HOST'] . '/createProject'; // forcing this for the demo / pitch
+			$return = 'http://' . $_SERVER['HTTP_HOST'] . '/'; // forcing this for the demo / pitch
 			header("Location: " . $return);
 
 			break;

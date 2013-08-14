@@ -20,13 +20,13 @@
         $this->creator = new User($this->creatorID);
 //var_dump($this->uuid);
 //var_dump( glob($_SERVER['DOCUMENT_ROOT'] . "/images/projects/" . $this->uuid . ".*"));
-       $imgFile = glob($_SERVER['DOCUMENT_ROOT'] . "/images/projects/" . $this->uuid . ".*");
+       $imgFile = glob($_SERVER['DOCUMENT_ROOT'] . "/images/projects/" . $this->uuid . ".png");
        
        //if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/../images/projects/" . $this->uuid . ".png")){
         if ( !empty($imgFile) && $imgFile[0] != '' ) {
         	$this->icon = "http://assets.beabandaid.co/images/projects/" . str_replace($_SERVER['DOCUMENT_ROOT']."/images/projects/", '', $imgFile[0]);
         }else{
-        	$this->icon = "http://assets.beabandaid.co/images/projects/openfire_default_project.png";
+        	$this->icon = "http://assets.beabandaid.co/images/projects/default.png";
         }
 
  global $dbh;
@@ -135,7 +135,7 @@ function getBackers($offset = 0, $num = 999){
         global $dbh;
 
         $inarray = array();
-
+//echo "<br /><h1>SELECT userID, amount, goalID, rewardID, status FROM backers where goalID in (select id from goals where projectID='$this->id') limit $offset, $num</h1><br />";
 $sth = $dbh->prepare("SELECT userID, amount, goalID, rewardID, status FROM backers where goalID in (select id from goals where projectID='$this->id') limit $offset, $num");
 $sth->execute();
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -147,7 +147,8 @@ foreach($result as $b){
     $tuser->amount = $b['amount'];
     $tuser->reward = new Reward($b['rewardID']);
     $tuser->rewardStatus = $b['status'];
-$this->backers[] = $tuser;
+//$this->backers[] = $tuser;
+array_push($this->backers, $tuser);
     $inarray[] = $b['userID'];
     }
 }

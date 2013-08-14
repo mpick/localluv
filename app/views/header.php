@@ -40,8 +40,7 @@ ini_set('display_errors', '1');
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li><a href="/projects">Explore Bands</a></li>
-          <li><a href="/createProject">Register Band</a></li>
-          <li><a href="/about">About Us</a></li>
+          <li><a href="/createProject">Register Your Band</a></li>
 
 <!--             <li>
               <form class='navbar-form form-search' action='/search' method='get'>
@@ -51,6 +50,7 @@ ini_set('display_errors', '1');
           <li class="divider-vertical"></li> -->
 
     <? if(empty($user->id)): ?>
+            <li><a href="/about">About Us</a></li>
             <li class='dropdown'>
              <a href="#loginModal" role="button" data-toggle="modal">Login</a>
 
@@ -59,6 +59,7 @@ ini_set('display_errors', '1');
             <li class='dropdown' style='margin-left: 2em'>
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class='muted'>Logged in as</span> <img src='<?= $user->avatar?>' height="20px" class='avatar'> <?= $user->username ?> <b class="caret"></b></a>
               <ul class='dropdown-menu'>
+                <li><a href="/about">About Us</a></li>
                 <li><a href='/profile'>My Profile</a></li>
                 <li><a href='/logout'>Logout</a></li>
               </ul>

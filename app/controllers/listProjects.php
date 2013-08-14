@@ -7,7 +7,7 @@ function get(){
 	$projects = array();
 	$categories = array();
 
-$sth = $dbh->prepare("SELECT id FROM projects order by dateAdded desc");
+$sth = $dbh->prepare("SELECT id FROM projects order by dateAdded");
 $sth->execute();
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 

@@ -83,7 +83,7 @@ ini_set('display_errors', '1');
                 <div class="gprogress" style="width:<?= $goal->percentComplete ?>%"></div>
             </div>
             <h3>
-                <a title="<?= $goal->name ?>" href="/projects/<?= $project->slug ?>"><?= $goal->name ?></a>
+                <a title="<?= $goal->name ?>" href="/projects/<?= $project->slug ?>"><?= $project->title ?></a>&nbsp;<span style="font-size:0.65em">(<?php echo $goal->name ?>)</span>
             </h3>
              
             <div class="summary">

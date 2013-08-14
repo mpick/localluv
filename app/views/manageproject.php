@@ -119,7 +119,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 	</ul>
 			<ul class='nav nav-pills nav-stacked'>
 		<!-- <li class='active'><a href='#messages' data-toggle='tab'>Messages</a> -->
-		<li class='active'><a href='#overview' data-toggle=tab>Project Overview</a>
+		<li class='active'><a href='#overview' data-toggle=tab>Band Overview</a>
 		<li><a href='#goals' data-toggle=tab>Tours</a>
 		<!--<li><a href='#team' data-toggle=tab>Team</a>-->
 		<li><a href='#updates' data-toggle=tab>Updates <? if(count($this->project->updates > 0)): ?>(<?= count($this->project->updates) ?>)<? endif; ?></a>
@@ -149,21 +149,22 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 						<input type='hidden' name='uuid' value='<?= $this->project->uuid ?>'>
 
 						<fieldset>
-							<legend>Project Overview</legend>
-							<label for='title'>Title</label>
-							<input type='text' data-required='true'  data-error-message='Your project must have a title.' class='input-xxlarge' name='title' value="<?= $this->project->title ?>" <? if(!in_array($this->project->status, array("draft","pending approval"))): ?> disabled='disabled' <?endif; ?>><? if(!in_array($this->project->status, array("draft","pending approval"))): ?><span class='help-block'>Once your project has been published, the title cannot be changed.</span><?endif;?>
+							<legend>Band Information</legend>
+							<label for='title'>Band Name</label>
+							<input type='text' data-required='true'  data-error-message='Your project must have a title.' class='input-xxlarge' name='title' value="<?= $this->project->title ?>" <? if(!in_array($this->project->status, array("draft","pending approval"))): ?> disabled='disabled' <?endif; ?>><? if(!in_array($this->project->status, array("draft","pending approval"))): ?><span class='help-block'>Once your band has been approved, the band name cannot be changed.</span><?endif;?>
 				 		</fieldset>
 						<fieldset>
 							<label for='subtitle'>Tagline/Subtitle</label>
 							<input type='text'  data-required='true'  data-error-message='Your project must have a subtitle.' class='input-xxlarge' name='subtitle' value="<?= $this->project->subtitle ?>">
 				 		</fieldset>
+				 		<br />
 						<fieldset>
 							<label for='mediaEmbed'>Video URL</label>
 							<input type='text'  data-required='true'  data-error-message='Your project must have a video.' class='input-xxlarge' name='mediaEmbed' placeholder='e.g. http://www.youtube.com/watch?v=oHg5SJYRHA0' value="<?= $this->project->mediaEmbed ?>">
 				 		</fieldset>
 				 		<br>
 						<fieldset>
-							<label for='summary'>Summary</label>
+							<label for='summary'>Band Description</label>
 							 
 							<textarea name='summary' id='summary' class='input-xxlarge' style='height: 8em' data-required='true' data-error-message='Your project must have a summary.'><?= $this->project->summary ?></textarea>
 				 		</fieldset>
@@ -175,16 +176,16 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 				 		</fieldset>
 				 		-->
 						<fieldset>
-							<label for='icon'>Project Icon</label>
+							<label for='icon'>Band Logo</label>
 							<div class='row-fluid'><div class='span2'><img src='<?= $this->project->icon ?>' style='width: 128px'></div>
-							<div class='col-lg-10'><input type='file' name='icon'>
-							<span class='help-block'>This is your project's logo or image. Maximum file size 5MB, and we'll resize it to 256x256 pixels. If you don't upload one, you get the default one, which is spiffy, but not as cool as having your own.</span>
+							<div class='span10'><input type='file' name='icon'>
+							<span class='help-block'>This is your band's logo or image. Maximum file size 5MB, and we'll resize it to 256x256 pixels. If you don't upload one, you get the default one, which is spiffy, but not as cool as having your own.</span>
 						</div>
 					</div>
 						</fieldset> <br>
-						<h5>Project Status: <?= ucwords($this->project->status) ?></h5>
+						<h5>Band Registration Status: <?= ucwords($this->project->status) ?></h5>
 				 		<? if ($this->project->isAdmin($user) == true): ?><div class="form-actions">
-				 			<button type='submit' name='action' value='update' class='btn'>Update<? if($this->project->status == "draft") echo " Draft" ?></button> <? if($this->project->status == "draft"): ?><button type='submit' id='publishButton' class='btn btn-success' name='action' value='publish'>Publish Project</button><? endif; ?>
+				 			<button type='submit' name='action' value='update' class='btn'>Update<? if($this->project->status == "draft") echo " Draft" ?></button> <? if($this->project->status == "draft"): ?><button type='submit' id='publishButton' class='btn btn-success' name='action' value='publish'>Publish Band</button><? endif; ?>
 				 		</div>
 				 		<? endif; ?>
 					</form>
@@ -193,7 +194,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 		<legend>Tours</legend>
 		<? foreach($this->project->goals as $goal): ?>
 		<div class='goal well well-small'>
-			<div><h3 class='pull-left'><?= $goal->name ?> <? if($goal->isCurrent == 1): ?><span class='label label-info'>current</span><? endif; ?></h3><a href='/projects/<?php echo $this->project->slug; ?>' class='btn pull-right'><i class='icon-eye-open'></i> View Tour</a><div class='clearfix'></div><a href='/manageGoal/<?= $goal->uuid ?>' class='btn pull-right'><i class='icon-eye-open'></i> Manage Rewards</a><div class='clearfix'></div></div>
+			<div><h3 class='pull-left'><a href='/manageGoal/<?= $goal->uuid ?>'><?= $goal->name ?></a> <? if($goal->isCurrent == 1): ?><span class='label label-info'>current</span><? endif; ?></h3><a href='/projects/<?php echo $this->project->slug; ?>' class='btn pull-right'><i class='icon-eye-open'></i> View Tour</a><div class='clearfix'></div><a href='/manageGoal/<?= $goal->uuid ?>' class='btn pull-right'><i class='icon-eye-open'></i> Manage Tour Perks</a><div class='clearfix'></div></div>
 			<div><?= trimtopcount($goal->description, 2) ?></div>
 			<h5>Status: <?= ucwords($goal->status) ?></h5>
  			<h5>Funds: <b>$<?= number_format($goal->currentAmount, 2) ?></b> of <b>$<?= number_format($goal->targetAmount, 2) ?></b> raised from <b><?= count($goal->backers) ?></b> backers</h5>
@@ -228,7 +229,7 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 
 		<h3>Add An Update</h3>
 		<fieldset>
-			<label for='title'>Title</label>
+			<label for='title'>Band</label>
 			<input type='text' class='span12' name='title'>
 		</fieldset>
 		<fieldset>

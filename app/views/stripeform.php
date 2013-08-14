@@ -14,6 +14,12 @@
                 <p><input type="text" size="20" name="name" class='form-control' style="width:300px" value="<?=$this->name?>"/></p>
               </div>
             </div>
+                <div class="control-group">
+              <label class="control-label">Email</label>
+              <div class="controls">
+                <input type="text" size="20" name="name" value="<?=$this->email?>"/>
+              </div>
+            </div>
 	  	<div class="control-group">
               <p><label class="control-label">Card Number</label></p>
               <div class="controls">

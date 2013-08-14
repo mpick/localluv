@@ -1,6 +1,6 @@
       <H1>LOGIN OR SIGN UP TO FUND THIS GOAL</H1>
-  		<a class='btn btn-info btn-large' href='/auth/facebook' style='background: #596F90; margin-top: 0.5em; margin-bottom: 0.5em'><i class='icon-facebook'></i> Log In With Facebook</a> <a class='btn btn-info btn-large' href='/auth/twitter'><i class='icon-twitter'></i> Log In With Twitter</a>
-  		<hr>
+  		<?php /*<a class='btn btn-info btn-large' href='/auth/facebook' style='background: #596F90; margin-top: 0.5em; margin-bottom: 0.5em'><i class='icon-facebook'></i> Log In With Facebook</a> <a class='btn btn-info btn-large' href='/auth/twitter'><i class='icon-twitter'></i> Log In With Twitter</a>
+  		<hr> */?>
 
 <h2>Or Use Email And Password</h2>
 	<form action='/login' method='post'>

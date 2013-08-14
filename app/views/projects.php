@@ -11,7 +11,7 @@
 		<div class='col-lg-9 col-lg-offset-1'><h4><a href='/projects/<?= $project->slug ?>'><?= $project->title ?></a></h4>
 			<div>Category: <b><?= $project->category['name'] ?></b></div>
 		<div><?= trimtopcount($project->description, 1) ?></div>
-		<div style='font-weight: bold'>Goals: <a href='/projects/<?= $project->slug ?>/goals'><?= count($project->goals) ?></a> | Backers: <?= count($project->backers) ?></div>
+		<div style='font-weight: bold'>Tours: <?php /*<a href='/projects/<?= $project->slug ?>/goals'> */ ?><?= count($project->goals) ?><?php //</a> ?>&nbsp;| Backers: <?= count($project->goals[0]->backers) ?></div>
 	</div>
 </div>
 	<div class='clearfix'></div>

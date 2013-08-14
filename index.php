@@ -1,4 +1,7 @@
-<? require_once('app/conf/global.php'); 
+<?php 
+header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
+header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");
+require_once('app/conf/global.php'); 
 
 require_once('app/conf/opauth.conf.php'); 
 
@@ -53,13 +56,17 @@ Toro::serve(array(
     "logout" => "Logout",
     "profile" => "Profile",
     "projects" => "listProjects",
+    "bands" => "listProjects",
     "projects/categories/:alpha" => "listProjectsByCategory",
     "projects/:alpha" => "Projects",
+    "bands/:alpha" => "Projects",
     "projects/:alpha/goals" => "listProjectGoals",
+    "bands/:alpha/goals" => "listProjectGoals",
     "updates/:alpha" => "Updates",
     "goals/:alpha" => "Goals",
     "goals/:alpha/fund" => "Fund",
     "createProject" => "createProject",
+    "band/:alpha" => "createProject",
     "finishProject/:alpha" => "finishProject",
     "finishProject/:alpha/finishGoal" => "finishGoal",
     "manageProject/:alpha" => "manageProject",

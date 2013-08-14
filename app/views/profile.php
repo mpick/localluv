@@ -75,13 +75,26 @@ $('.tooltipped').tooltip();
         </div>
 
 	        <div class='tab-pane fade in' id='bands'>
-		        <h2>My Bands</h2>
+		        <h2>Manage Bands</h2>
 
-	                <? foreach($this->user->projects as $project): ?>
-	                <div class='well well-small'>
-		                <h3><a href='/projects/<?= $project->slug ?>'><img src='<?= $project->icon ?>' style='width: 64px'> <?= $project->title ?></a> <? if($project->isAdmin == 1): ?><a href='/manageProject/<?= $project->uuid ?>' class='btn pull-right'><i class='icon-edit'></i> Manage Project</a><? endif; ?></h3>
-	                </div>
-                        <? endforeach; ?>
+	                <?php 
+	                if ( !empty($this->user->projects) > 0 ) {
+	                        foreach($this->user->projects as $project): 
+	                ?>
+	                        <div class='well well-small'>
+		                        <h3><a href='/projects/<?= $project->slug ?>'><img src='<?= $project->icon ?>' style='width: 64px'> <?= $project->title ?></a> <? if($project->isAdmin == 1): ?><a href='/manageProject/<?= $project->uuid ?>' class='btn pull-right'><i class='icon-edit'></i> View/Edit Band Info</a><? endif; ?></h3>
+	                        </div>
+                        <?php 
+                                endforeach;
+                        }
+                        else {
+                        ?>
+                                <div class='well well-small'>
+                                        <h3>You've created your Band on BandAid!</h3>
+                                        <a href='/band/create' class='btn text-align-center'> Register Your Band</a>
+                                        <br />
+                                </div>
+                        <?php } ?>
 	        </div>
         </div>
 </div>
