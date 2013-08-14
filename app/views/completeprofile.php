@@ -1,4 +1,5 @@
-<div class='span8 offset2 well well-small'>
+<div class="container">
+<div class='col-lg-8 col-lg-offset-2 well well-small'>
 
 <h2>Almost Done!</h2>
 
@@ -43,4 +44,5 @@
 
 </form>
 
+</div>
 </div>

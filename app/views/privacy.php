@@ -1,4 +1,5 @@
-<div class='span8 offset2'>
+<div class="container">
+	<div class='col-lg-8 col-lg-offset-2'>
 	<h1>openfi.re Privacy Policy</h1>
 <br><br>
 <p>We respect your right to privacy.</p>

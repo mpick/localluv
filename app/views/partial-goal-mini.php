@@ -1,9 +1,9 @@
 <? global $embedly; ?>
 <div class='goal mini row-fluid'>
-      <div class='media span6'>
+      <div class='media col-lg-6'>
       	<? if(!empty($this->goal->mediaEmbed)){ if(empty($this->mediaWidth)) $this->mediaWidth = 320; $objs = $embedly->oembed(array('url' => $this->goal->mediaEmbed, 'maxwidth' => $this->mediaWidth)); if(!empty($objs[0]->html)) echo $objs[0]->html; } ?>
       </div>
-      <div class='span6'>
+      <div class='col-lg-6'>
 
 	      	<h3><a href='/projects/<?= $this->project->slug ?>'><? if(!empty($this->showProjectIcon)): ?><a href='/projects/<?= $this->project->slug ?>'><img class='project-icon-med' src='<?= $this->project->icon ?>'></a> <? endif; ?> <a href='/goals/<?= $this->goal->uuid ?>'><?= $this->goal->name ?></a></h3>
 	      	<? if(!empty($this->showProject)): ?><h5>Project: <a href='/projects/<?= $this->project->slug ?>'><?= $this->project->title ?></a></h5><? endif; ?>
@@ -18,3 +18,4 @@
 			</div>
   		</div>
     </div>
+</div>

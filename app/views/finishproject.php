@@ -1,5 +1,6 @@
 <? global $user; ?>
-<div class='span7 well well-small'>
+<div class="container">
+<div class='col-lg-7 well well-small'>
 	<legend><span class='muted'><span class='circled'>1</span>Submit Project For Proposal</span><br><b><span class='circled'>2</span></b> Complete Project Details<br><span class='muted'><span class='circled'>3</span> Complete Initial Goal Details</span></legend>
 
 			<form enctype="multipart/form-data" action='' method='post' id='manageProjectForm'>
@@ -76,8 +77,9 @@
 				 							<? endif; ?>
 					</form>
 	</div>
-<div class='span5'>
+<div class='col-lg-5'>
 		<h3>step 2: completing project setup</h3>
 		<p>Congratulations! Your project has been approved by openfire. Now you just need to add some more information before you can publish it and start pushing towards victory.</p>
 
+</div>
 </div>

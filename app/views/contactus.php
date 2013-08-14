@@ -1,5 +1,5 @@
 <? global $user; ?>
-<div class='span8 offset2'>
+<div class='col-lg-8 col-lg-offset-2'>
 	<h1>Contact Us</h1>
 <form action='' method='post'>
 

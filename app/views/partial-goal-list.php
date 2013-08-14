@@ -3,10 +3,10 @@
 	<h4><a href='/goals/<?= $this->goal->uuid ?>'><?= $this->goal->name ?></a><? if($this->goal->isCurrent == 1): ?> <span class='label label-warning'>Current</span><? endif; ?></h4>
 	<div class='row-fluid'>
 	
-		<div class='span6'>
+		<div class='col-lg-6'>
 	<div class='summary'><?= nl2br($this->goal->summary) ?></div>
 </div>
-<div class='span6'>
+<div class='col-lg-6'>
 	<div class="progress <? if ($this->goal->currentAmount < $this->goal->targetAmount) echo 'progress-striped active'; ?>">
 				 <div class="bar bar-success" style="width: <?= ($this->goal->currentAmount / $this->goal->targetAmount) * 100 ?>%;"></div>
 			</div>

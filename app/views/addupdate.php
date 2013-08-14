@@ -1,4 +1,5 @@
-<div class='span8 well well-small'>
+<div class="container">
+<div class='col-lg-8 well well-small'>
 <h2>Add Update</h2>
 
 <form action='' method='post'>
@@ -24,4 +25,5 @@
 
 </form>
 
+</div>
 </div>

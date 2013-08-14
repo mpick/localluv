@@ -21,7 +21,8 @@ var i = 0;
 });
 
 </script>
-<div class='span8'>
+<div class="container">
+<div class='col-lg-8'>
 
 		<form enctype="multipart/form-data" action='' method='post' data-validate='parsley'>
 			<input type="hidden" name="MAX_FILE_SIZE" value="100000000" />
@@ -101,3 +102,4 @@ var i = 0;
 
 
 	</div>
+</div>

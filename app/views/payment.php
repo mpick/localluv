@@ -1,4 +1,5 @@
-<div class='span8'>
+<div class="container">
+<div class='col-lg-8'>
 
   <form action="postpayment" method="POST" id="payment-form">
     <span class="payment-errors"></span>
@@ -33,4 +34,5 @@
 
     <button type="submit">Submit Payment</button>
   </form>
+</div>
 </div>
