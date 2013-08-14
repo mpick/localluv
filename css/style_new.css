@@ -4353,35 +4353,20 @@ a.list-group-item.active > .badge,
 .carousel-inner > .active {
   left: 0;
 }
-<<<<<<< HEAD
-.create-project li.custom-error-message {
-        color: red;
-        list-style:none;
-        font-size: 14px;
-=======
 
 .carousel-inner > .next,
 .carousel-inner > .prev {
   position: absolute;
   top: 0;
   width: 100%;
->>>>>>> bootstrap3
 }
 
 .carousel-inner > .next {
   left: 100%;
 }
-<<<<<<< HEAD
-.create-project button {
-        margin-top: 20px; 
-}
-.navbar .nav li {
-        padding-top: 5px;
-=======
 
 .carousel-inner > .prev {
   left: -100%;
->>>>>>> bootstrap3
 }
 
 .carousel-inner > .next.left,

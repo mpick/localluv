@@ -48,10 +48,7 @@
 				You can also create a Customer in Stripe which stores used credit cards and customer information. That Customer has an Id from Stripe and you could store that into our database.
 			*/
 			$redirect_uri = "http://" . $_SERVER['SERVER_NAME'] . "/fundingComplete/" . $uuid . "/" . $user->uuid . "/" . $rewardUUID . "/" . $_POST['amount'] . "?checkout_id=" .  $charge->id;
-<<<<<<< HEAD
-=======
 
->>>>>>> bootstrap3
 			header("Location: " . $redirect_uri);
 		}
 

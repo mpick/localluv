@@ -20,11 +20,7 @@
   </div>
   <br><br>
   	<h4>
-<<<<<<< HEAD
-    <a href='/projects/<?= $project->slug ?>'>Return to <b><?= $project->title ?></b></a></h4>
-=======
     <a href='/bands/<?= $project->slug ?>'>Return to <b><?= $project->title ?></b></a></h4>
->>>>>>> bootstrap3
 
   </div>
   </div>

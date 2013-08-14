@@ -152,13 +152,10 @@ var action = "action=" + doIt + "&projectUUID=" + $(this).attr('data-projectUUID
 							<legend>Band Information</legend>
 							<label for='title'>Band Name</label>
 							<input type='text' data-required='true'  data-error-message='Your project must have a title.' class='input-xxlarge' name='title' value="<?= $this->project->title ?>" <? if(!in_array($this->project->status, array("draft","pending approval"))): ?> disabled='disabled' <?endif; ?>><? if(!in_array($this->project->status, array("draft","pending approval"))): ?><span class='help-block'>Once your band has been approved, the band name cannot be changed.</span><?endif;?>
-<<<<<<< HEAD
-=======
 				 		</fieldset>
 						<fieldset>
 							<label for='subtitle'>Tagline/Subtitle</label>
 							<input type='text'  data-required='true'  data-error-message='Your project must have a subtitle.' class='input-xxlarge' name='subtitle' value="<?= $this->project->subtitle ?>">
->>>>>>> bootstrap3
 				 		</fieldset>
 				 		<br />
 						<fieldset>

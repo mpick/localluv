@@ -1,19 +1,11 @@
 <style>
 .inspiration p{margin-bottom: 1em;}
 </style>
-<<<<<<< HEAD
-<div class="span12">
-        <span class="offset4"><img src="/images/bandaid_logo.png" style="height:150px; text-align:center;" /></span>
-</div>
-<div class='span12'>
-	<div class='span8 inspiration offset2' style='margin-top: 2em; font-size: 1.5em; line-height: 1.25em'>
-=======
 <div class="container">
         <div class="col-lg-4 col-lg-offset-4"><img src="/images/bandaid_logo.png" style="height:150px; text-align:center; margin-bottom: 50px;" /></div>
 </div>
 <div class='col-lg-12'>
 	<div class='col-lg-8 col-lg-offset-2' style="font-size: 1.5em; ">
->>>>>>> bootstrap3
 
 <p>
 <b>Touring is an essential right of passage for bands aspiring to stardom.</b> But touring means leavin behind their most ardent local fans in the quest to spread their sound around the country. For even the most talented bands, it's a major uphill battle to build a geographically-diverse fan base, and find ways to monetize their efforts on tour to reach (or stay) in the black along the way.

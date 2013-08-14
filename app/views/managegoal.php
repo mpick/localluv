@@ -239,8 +239,6 @@ console.log(data.action);
 	</div>
 
 </div>
-<<<<<<< HEAD
-=======
 <div class='span3'>
 	<h3><i class='icon-info-sign'></i> Adding A Goal</h3>
 <p><b>Goals</b> are the most important part of your project: they're how you raise money and bring in collaborators for your project.</p>
@@ -251,4 +249,3 @@ console.log(data.action);
 
 
 	</div>
->>>>>>> bootstrap3

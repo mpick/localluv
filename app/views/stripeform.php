@@ -6,11 +6,7 @@
 			<input type="hidden" name="<?=$key?>" value="<?=$val?>">
 		<?php endforeach ?>
 		<fieldset>
-<<<<<<< HEAD
-			<legend>Support the Tour</legend>
-=======
-			<p><legend>Support the Tour</legend></p>
->>>>>>> bootstrap3
+      <p><legend>Support the Tour</legend></p>
 	  <div class="form-row">
 	  	<div class="control-group">
               <p><label class="control-label">Name</label></p>
@@ -25,17 +21,7 @@
               </div>
             </div>
 	  	<div class="control-group">
-<<<<<<< HEAD
-              <label class="control-label">Email</label>
-              <div class="controls">
-                <input type="text" size="20" name="name" value="<?=$this->email?>"/>
-              </div>
-            </div>
-	  	<div class="control-group">
-              <label class="control-label">Card Number</label>
-=======
               <p><label class="control-label">Card Number</label></p>
->>>>>>> bootstrap3
               <div class="controls">
                 <input type="text" size="20" class='form-control' style="width:300px" name="cardnumber" required/>
               </div>

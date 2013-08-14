@@ -35,32 +35,12 @@
   error_reporting(E_ALL);
 ini_set('display_errors', '1');
   ?>
-<<<<<<< HEAD
-  <!-- Header -->
-<div class="row-fluid" style=" padding-bottom: 4em">
-    <div class="row-fluid" style=" padding-bottom: 4em">
-    <div class='navbar navbar-fixed-top' style="margin-bottom:px;">
-      <div class='navbar-inner'>
-        <div class="container">
-        <a class='brand' href='/'><img src="/images/bandaid_logo.png" style="height:30px" /></a>
-        <ul class="nav">
-          <li class='dropdown'>
-            <a href="/bands">Explore Bands</a>
-          </li>
-          <li class="divider-vertical"></li>
-          <li><a href="/band/register">Register Your Band</a></li>
-          <li class="divider-vertical"></li>
-          </ul>
-          <ul class='nav pull-right'>
-          <li class="divider-vertical"></li>
-=======
       <!-- Static navbar -->
 <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li><a href="/projects">Explore Bands</a></li>
           <li><a href="/createProject">Register Your Band</a></li>
->>>>>>> bootstrap3
 
 <!--             <li>
               <form class='navbar-form form-search' action='/search' method='get'>
@@ -70,11 +50,7 @@ ini_set('display_errors', '1');
           <li class="divider-vertical"></li> -->
 
     <? if(empty($user->id)): ?>
-<<<<<<< HEAD
-            <li><a href="/about">About</a></li>
-=======
             <li><a href="/about">About Us</a></li>
->>>>>>> bootstrap3
             <li class='dropdown'>
              <a href="#loginModal" role="button" data-toggle="modal">Login</a>
 

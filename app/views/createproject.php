@@ -61,19 +61,11 @@ $(function() {
 			</p>
 		</fieldset>
 		<fieldset>
-<<<<<<< HEAD
-			<label for='targetAmount'><b>*</b> Tour Funding Goal</label>
-			<div class="input-prepend" style='display:inline'>
-                                <span class="add-on">$</span>
-                                <input class="input-xxl" id='targetAmount' name='targetAmount' type="text" placeholder="In US dollars" data-required="true" data-error-message='Your goal has to have a funding target.'> 
-                        </div>
-=======
 			<p><label for='targetAmount'><b>*</b> Tour Funding Goal</label></p>
     <div class="input-group">
   <span class="input-group-addon">$</span>
   <input class="input-xxl" id='targetAmount' name='targetAmount' type="text" placeholder="In US dollars"  data-required='true' data-error-message='Your goal has to have a funding target.'> 
 </div> 
->>>>>>> bootstrap3
 		</fieldset>
 		<br />
 		<fieldset>

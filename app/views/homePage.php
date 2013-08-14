@@ -1,27 +1,4 @@
 <? global $user; global $embedly; $partials = new Templater(); ?>
-<<<<<<< HEAD
-     <div class="splash-row">
-        <div class="row-fluid">
-          
-          <div class="span10 splash offset1" style="background-color: rgba(0, 0, 0, 0);">
-           <div class='row-fluid' style="background-color: rgba(0, 0, 0, 0); ">
-            <div class='span2 offset2' style="background-color: rgba(0, 0, 0, 0);margin-top:50px;">
-            <img width="200" src="img/bandaid_logo.png">
-          </div>
-          <div class='span7' style="background-color: rgba(0, 0, 0, 0);text-shadow: 2px 2px #2d2d2d; margin-top:25px;">
-            <h1 style="color:#ffffff;">
-              <strong>
-                <p>Support the tour.</p> <p>Experience the journey.</p>
-              </strong>
-              <br />
-              
-            </h1>
-            <p style='color:#fff; margin-left:-210px;margin-top:-10px;text-align:center;'>Help bands tour.  Bands personally connect to you. <br /> Bands win. Fans win. Music wins.</p>
-          </div>
-        </div>
-          </div>
-           
-=======
   <div class="jumbotron">
     <div class="container">
       <div class="col-lg-2 col-lg-offset-1">
@@ -37,7 +14,6 @@
       </div>
       <div class="col-lg-11">
         <p>Bands win. Fans win. Music wins.</p>
->>>>>>> bootstrap3
       </div>
     </div>
   </div>
