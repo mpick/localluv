@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="google-site-verification" content="Q75qkjWivhgKNp5SAVjcNhklBZhU8burcU_juYZQEhU" />
+<?php if ( isset($this->metaTagExtra) ) { echo $this->metaTagExtra; } ?>
 <title>BandAid<? if(!empty($this->title)) echo " | " . $this->title ?></title>
 <link href="/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/elusive-webfont.css" rel="stylesheet" media="screen">
@@ -12,7 +13,7 @@
 <? endforeach; endif; ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> 
-<script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
