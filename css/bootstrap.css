@@ -366,8 +366,19 @@ body.project li.goal.current{
     margin-left: auto;
     margin-right: auto 
   }
+  .projectsfont {
+    padding:10px;
+    margin:0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+  }
   .projectsfont p {
     font-size: 10pt;
+  }
+  .projectsfont h4{
+    text-align: center;
+    font-size: 12pt;
   }
 
 

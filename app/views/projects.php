@@ -5,14 +5,15 @@
 <p>Support your favorite band and experience their journey. </p>
 <p><h2 style="text-align:center; margin-top:25px;">Bands Currently on Tour</h2></p>
 	<? foreach($this->projects as $project): if($project->status == 'published'): ?>
-	<div class='col-lg-4 well well-small'>
-		<div class='col-lg-4' ><a href='/projects/<?= $project->slug ?>'><img src='<?= $project->icon ?>' class='img-responsive'></a></div>
-		<div class='col-lg-9 col-lg-offset-1 projectsp'><p><h4><a href='/projects/<?= $project->slug ?>'><?= $project->title ?></a></h4></p>
-			<p>Category: <b><?= $project->category['name'] ?></b></p>
-			<p><?= trimtopcount($project->description, 1) ?></p>
-			<p class="pull-left">Tours: <?php /*<a href='/projects/<?= $project->slug ?>/goals'> */ ?><?= count($project->goals) ?><?php //</a> ?></p>
-			<p class='pull-right'>Backers: <?= count($project->goals[0]->backers) ?></p>
-		</div>
+	<div class='col-lg-4  projectsfont'>
+		<a href='/projects/<?= $project->slug ?>'><img src='<?= $project->icon ?>' class='img-responsive'></a>
+		<p><h4><a href='/projects/<?= $project->slug ?>'><?= $project->title ?></a></h4></p>
+		<p>Category: <b><?= $project->category['name'] ?></b></p>
+		<p><?= trimtopcount($project->description, 1) ?></p>
+		
+		<p class="pull-left">Tours: <?php /*<a href='/projects/<?= $project->slug ?>/goals'> */ ?><?= count($project->goals) ?><?php //</a> ?></p>
+		<p class='pull-right'>Backers: <?= count($project->goals[0]->backers) ?></p>
+
 	</div>
 
 <? endif; endforeach; ?>
