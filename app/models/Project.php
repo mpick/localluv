@@ -24,9 +24,9 @@
        
        //if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/../images/projects/" . $this->uuid . ".png")){
         if ( !empty($imgFile) && $imgFile[0] != '' ) {
-        	$this->icon = "http://assets.beabandaid.co/images/projects/" . str_replace($_SERVER['DOCUMENT_ROOT']."/images/projects/", '', $imgFile[0]);
+        	$this->icon = ROOTURL . "images/projects/" . str_replace($_SERVER['DOCUMENT_ROOT']."/images/projects/", '', $imgFile[0]);
         }else{
-        	$this->icon = "http://assets.beabandaid.co/images/projects/default.png";
+        	$this->icon = ROOTURL . "/images/projects/default.png";
         }
 
  global $dbh;

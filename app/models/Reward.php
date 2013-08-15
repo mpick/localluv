@@ -8,7 +8,7 @@
         parent::__construct($id);
 
         if(file_exists($_SERVER['DOCUMENT_ROOT'] . "/images/rewards/" . $this->uuid . ".png")){
-        	$this->image = "http://assets.beabandaid.co/images/rewards/" . $this->uuid . ".png";
+        	$this->image = ROOTURL . "images/rewards/" . $this->uuid . ".png";
         }else{
         	$this->image = null;
         }
