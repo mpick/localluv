@@ -66,7 +66,7 @@ ini_set('display_errors', '1');
             </li>
 <? endif; ?>
         </ul>
-        <h3 class="text-muted"><a href="/"><img src="/images/bandaid_logo.png" height="35px"></a><?php switch (HOSTNAME) { case "beabandaid.com": break; case "stage.beabandaid.com": echo "&nbsp;&nbsp;&nbsp;STAGING"; break; default: echo HOSTNAME;} ?></h3>
+        <h3 class="text-muted"><a href="/"><img src="/images/bandaid_logo.png" height="35px"></a><?php switch (HOSTNAME) { case "www.beabandaid.com": break; case "stage.beabandaid.com": echo "&nbsp;&nbsp;&nbsp;STAGING"; break; default: echo "&nbsp;&nbsp;&nbsp;OTHER";} ?></h3>
       </div>
 </div>
 <!-- Main body -->
