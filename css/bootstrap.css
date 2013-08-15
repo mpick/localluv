@@ -225,6 +225,9 @@ img.avatar{height: 1em;}
   padding-left: 0;
   padding-right:30px;
 }
+.goal h3 {
+  text-align:center;
+}
 
 .goal .stats li{
   display: inline-block;
@@ -358,7 +361,14 @@ body.project li.goal.current{
   .stats {
     margin-left:-25px;
   }
-
+  img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+  }
+  .projectsfont p {
+    font-size: 10pt;
+  }
 
 
 .chart .goal.success, .chart .goal.goal-met{background: #efe;}
