@@ -65,7 +65,7 @@ ini_set('display_errors', '1');
             </li>
 <? endif; ?>
         </ul>
-        <h3 class="text-muted"><a href="/"><img src="../images/bandaid_logo.png" height="35px"></a></h3>
+        <h3 class="text-muted"><a href="/"><img src="/images/bandaid_logo.png" height="35px"></a></h3>
       </div>
 </div>
 <!-- Main body -->
