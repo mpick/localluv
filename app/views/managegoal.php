@@ -14,57 +14,60 @@ $(function() {
 
 	$('#addReward').click(function(){
 		$('#rewardList').prepend(<?php echo $rewardform ?>);
+		
 		i++;
 
-	$('.removeReward').on('click', function(){
-		var theparent = "#" + $(this).attr('data-parent');
-		$(theparent).remove();
-	});
+                $('.removeReward').on('click', function(){
+	                var theparent = "#" + $(this).attr('data-parent');
+	                $(theparent).remove();
+                });
 
-$('#addRewardForm').ajaxForm({
-	dataType: 'html',
-	success: function(data){
-		$('#addRewardForm').remove();
-		$('#rewardList').prepend(data);
-	}
+        
+                $('#addRewardForm').ajaxForm({
+                        dataType: 'html',
+                        success: function(data){
+                        	$('#addRewardForm').remove();
+	                        $('#rewardList').prepend(data);
+	                        editRewardAJAX ( $('.editReward').first() );
+	                        $('.editReward button[value="delete"]').first().click( function() {rewardConfirmDelete (); } );
+                        }
+                });
+
+        });
+
+        $('.editReward button[value="delete"]').click( function () { rewardConfirmDelete(); } );
+
+        $('.editReward').each( function() { editRewardAJAX(this); });
 });
 
+        var editRewardAJAX = function ( targetObj ) {
 
-	});
+                var theForm = $(targetObj);
 
-$('.editReward button[value="delete"]').click(function(){
+                $(targetObj).ajaxForm({
+	                dataType: 'json',
+	                success: function(data){
+			        
+			        console.log(targetObj);
+                                console.log(data.action);
+                                
+		                if(data.action === "deleted"){
+			                theForm.slideUp();
+		                }else{
+			                theForm.html(data.html);
+		                }
 
-confirm("Are you sure you want to delete this reward?");
+		                $('body').prepend("<div style='position:fixed; top:0; left: 0; width: 90%; z-index:99999' class='alert'><button type='button' class='close' data-dismiss='alert'>&times;</button>The tour perk has been " + data.action + "</div>");
 
-});
-
-$('.editReward').each(function(){
-
-var theForm = $(this);
-
-$(this).ajaxForm({
-	dataType: 'json',
-	success: function(data){
-			console.log(this);
-console.log(data.action);
-		if(data.action === "deleted"){
-			theForm.slideUp();
-		}else{
-			theForm.html(data.html);
-		}
-
-		$('body').prepend("<div style='position:fixed; top:0; left: 0; width: 90%; z-index:99999' class='alert'><button type='button' class='close' data-dismiss='alert'>&times;</button>The tour perk has been " + data.action + "</div>");
-
-	}
-});
-
-
-
-});
-
-
-});
-
+	                } 
+	        });
+	        //alert(1);   
+        }
+        
+        var rewardConfirmDelete = function () {
+                confirm("Are you sure you want to delete this reward?");
+        }
+        
 
 </script>
 <h2><a href='/manageProject/<?= $this->project->uuid ?>'><?= $this->project->title ?></a>: <?= $this->goal->name ?></h2>

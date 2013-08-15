@@ -11,7 +11,7 @@
         global $dbh;
 
 
-$sth = $dbh->prepare("SELECT count(*) FROM projects where categoryID = '$this->id'");
+$sth = $dbh->prepare("SELECT count(*) FROM projects WHERE categoryID = '$this->id' AND status = 'published'");
 $sth->execute();
 $result = $sth->fetch(PDO::FETCH_ASSOC);
 
