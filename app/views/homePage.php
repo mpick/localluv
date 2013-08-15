@@ -98,4 +98,3 @@ ini_set('display_errors', '1');
 
       </div>
     </div>
-      <img src="http://ad.retargeter.com/seg?add=659127&t=2" width="1" height="1" />
