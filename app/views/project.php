@@ -83,24 +83,27 @@ $(function() {
                             <?php /* <div style='text-align:center; margin-top: 2em; margin-bottom: 2em'><a href="/goals/<?= $currentGoal->uuid ?>/fund" role="button" data-toggle="modal" class='btn btn-success btn-large requiresLogin'>Support The Band's Current Tour<br><span style='font-size: 0.75em; font-weight: 300'>$<?=$currentGoal->suggestedAmount?> Minimum Pledge</small></a></div> */ ?>
                             <br /><br />
         <div class='share well well-small'>
-<a class='btn btn-info' href="https://twitter.com/share?url=<?= urlencode('http://' . $_SERVER['SERVER_NAME'] .  '/projects/' . $this->project->slug) ?>
-&text=<?= urlencode($this->project->title . " (via @beabandaid)") ?>" target='_new'><i class='icon-twitter'></i>Share on Twitter</a> 
-<a class='btn btn-info' style='background: #596F90' href="https://www.facebook.com/sharer/sharer.php?u=http://<?=urlencode($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'])?>" target='_blank'>
-  <i class='icon-facebook'></i> Share on Facebook
-</a>
-<a class='btn' target='_blank' href='https://plus.google.com/share?url=http://<?= $_SERVER['SERVER_NAME'] ?>/projects/<?= $this->project->slug ?>' style="border:2px solid #CCC; background-color:#ffffff"><i class='icon-googleplus'  style='color: #d34836'></i> Share on Google+</a>
-<div style='display:none'>
-    <span itemprop="name"><?= $this->project->title ?></span>
-<span itemprop="description"><?= $this->project->summary ?></span>
-<img itemprop="image" src="<?= $this->project->icon ?>">
-<meta property="og:title" content="beabandaid: <?= $this->project->title ?>" />
-<meta property="og:image" content="<?= $this->project->icon ?>" />
-<meta property="og:description" content="<?= $this->project->summary ?>" />
-</div>
-</div>
+                <a class='btn btn-info' href="https://twitter.com/share?url=<?= urlencode('http://' . $_SERVER['SERVER_NAME'] .  '/projects/' . $this->project->slug) ?>&text=<?= urlencode($this->project->title . " (via @beabandaid)") ?>" target='_new'>
+                        <i class='icon-twitter'></i>Share on Twitter
+                </a> 
+                <a class='btn btn-info' style='background: #596F90' href="https://www.facebook.com/sharer/sharer.php?u=http://<?=urlencode($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'])?>" target='_blank'>
+                        <i class='icon-facebook'></i> Share on Facebook
+                </a>
+                <a class='btn' target='_blank' href='https://plus.google.com/share?url=http://<?= $_SERVER['SERVER_NAME'] ?>/projects/<?= $this->project->slug ?>' style="border:2px solid #CCC; background-color:#ffffff">
+                        <i class='icon-googleplus'  style='color: #d34836'></i> Share on Google+
+                </a>
+                <div style='display:none'>
+                        <span itemprop="name"><?= $this->project->title ?></span>
+                        <span itemprop="description"><?= $this->project->summary ?></span>
+                        <img itemprop="image" src="<?= $this->project->icon ?>">
+                        <meta property="og:title" content="beabandaid.com: <?php echo $currentGoal->name; ?> for <?= $this->project->title ?>" />
+                        <meta property="og:image" content="<?= $this->project->icon ?>" />
+                        <meta property="og:description" content="<?= $this->project->summary ?>" />
+                </div>
+        </div>
 
 
-            <ul class='stats unstyled'>
+        <ul class='stats unstyled'>
             <!--<li>Creator: <b><a href='#'><?= $this->project->creator->username ?></a></b></li>-->
             <li>Launched: <b><?= date("F jS, Y", $this->project->dateAdded) ?></b></li>
             <li>Total Funds Raised: <b>$<?= $currentGoal->currentAmount ?></b> from <b><?= count($currentGoal->backers) ?></b> backers</li>
