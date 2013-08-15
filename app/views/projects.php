@@ -1,6 +1,6 @@
 <? global $user; global $embedly; $partials = new Templater(); ?>
 <div class="container">
-<div class='col-lg-8'>
+<div class='col-lg-3'>
 <h1><b>Explore</b> Bands</h1>
 <p>Support your favorite band and experience their journey. </p>
 <p><h2 style="text-align:center; margin-top:25px;">Bands Currently on Tour</h2></p>
