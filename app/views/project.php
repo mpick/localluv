@@ -96,7 +96,7 @@ $(function() {
                         <span itemprop="name"><?= $this->project->title ?></span>
                         <span itemprop="description"><?= $this->project->summary ?></span>
                         <img itemprop="image" src="<?= $this->project->icon ?>">
-                        <meta property="og:title" content="beabandaid.com: <?php echo $currentGoal->name; ?> for <?= $this->project->title ?>" />
+                        <meta property="og:title" content="beabandaid: <?php echo $currentGoal->name; ?> for <?= $this->project->title ?>" />
                         <meta property="og:image" content="<?= $this->project->icon ?>" />
                         <meta property="og:description" content="<?= $this->project->summary ?>" />
                 </div>
